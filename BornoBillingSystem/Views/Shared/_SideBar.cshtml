@@ -1,0 +1,108 @@
+﻿<div id="sidebar-menu" class="main_menu_side hidden-print main_menu">
+    <div class="menu_section">
+        <h3>General</h3>
+        <ul class="nav side-menu">
+            <li>
+                <a href="~/Admin/Dashboard"><i class="fa fa-home"></i>Home</a>
+            </li>
+            @if (Session["UserRole"].ToString().Equals("1"))//System Administrator
+            {
+                <li>
+                    <a><i class="fa fa-user"></i> Users <span class="fa fa-chevron-down"></span></a>
+                    <ul class="nav child_menu">
+                        <li><a href="~/User/CreateUser">Create User</a></li>
+                        <li><a href="~/User/ViewUsers">View User</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a><i class="fa fa-bank"></i> Customers <span class="fa fa-chevron-down"></span></a>
+                    <ul class="nav child_menu">
+                        <li><a href="~/Customer/ViewCustomers">View Customers</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a><i class="fa fa-user"></i> Districts <span class="fa fa-chevron-down"></span></a>
+                    <ul class="nav child_menu">
+                        <li><a href="~/Location/ViewDistricts">View Districts</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a><i class="fa fa-user"></i> Schemes <span class="fa fa-chevron-down"></span></a>
+                    <ul class="nav child_menu">
+                        <li><a href="~/Location/ViewScheme">View Schemes</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a><i class="fa fa-user"></i> Villages <span class="fa fa-chevron-down"></span></a>
+                    <ul class="nav child_menu">
+                        <li><a href="~/Location/Villages">View Villages</a></li>
+                    </ul>
+                </li>
+            }
+            @if (Session["UserRole"].ToString().Equals("4"))//billing
+            {
+                <li>
+                    <a><i class="fa fa-bank"></i> Customers <span class="fa fa-chevron-down"></span></a>
+                    <ul class="nav child_menu">
+                        <li><a href="~/Customer/CreateCustomer">Create Customers</a></li>
+                        <li><a href="~/Customer/ViewCustomers">View Customers</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a><i class="fa fa-bank"></i> Payments <span class="fa fa-chevron-down"></span></a>
+                    <ul class="nav child_menu">
+                        <li><a href="~/FileUpload/PaymentFileUpload">Payment File</a></li>
+                        <li><a href="~/FileUpload/ViewUploadedFiles">View Uploaded Files</a></li>
+                        <li><a href="~/Customer/DashBoard">Dashboard</a></li>
+                    </ul>
+                </li>
+
+            }
+            else if (Session["UserRole"].ToString().Equals("5"))//scheme manager
+            {
+                <li>
+                    <a><i class="fa fa-bank"></i> Customers <span class="fa fa-chevron-down"></span></a>
+                    <ul class="nav child_menu">
+                        <li><a href="~/Customer/CreateCustomer">Create Customers</a></li>
+                        <li><a href="~/Customer/ViewCustomers">View Customers</a></li>
+                    </ul>
+                </li>
+            }
+            else if (Session["UserRole"].ToString().Equals("3"))//M&E
+            {
+                <li>
+                    <a><i class="fa fa-bank"></i> Customers <span class="fa fa-chevron-down"></span></a>
+                    <ul class="nav child_menu">
+                        <li><a href="~/Customer/ViewCustomers">View Customers</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a><i class="fa fa-bank"></i> Reports <span class="fa fa-chevron-down"></span></a>
+                    <ul class="nav child_menu">
+                        <li><a href="~/Report/ConnectionReport">Connection Report</a></li>
+                        <li><a href="~/Report/ConnectionReportByType">Connection Report By Pipe</a></li>
+                        <li><a href="~/Report/CustomerPaymentReport">Payment Report</a></li>
+                        <li><a href="">Balance Report</a></li>
+                        <li><a href="~/Report/CustomerStatement">Custmer Statement</a></li>
+                    </ul>
+                </li>
+            }
+            else if (Session["UserRole"].ToString().Equals("1") || Session["UserRole"].ToString().Equals("2") ||
+                Session["UserRole"].ToString().Equals("3") || Session["UserRole"].ToString().Equals("4") ||
+                Session["UserRole"].ToString().Equals("5"))
+            {
+                <li>
+                    <a><i class="fa fa-bank"></i> Reports <span class="fa fa-chevron-down"></span></a>
+                    <ul class="nav child_menu">
+                        <li><a href="~/Report/ConnectionReport">Connection Report</a></li>
+                        <li><a href="~/Report/ConnectionReportByType">Connection Report By Pipe</a></li>
+                        <li><a href="~/Report/CustomerPaymentReport">Payment Report</a></li>
+                        <li><a href="">Balance Report</a></li>
+                        <li><a href="~/Report/CustomerStatement">Custmer Statement</a></li>
+                    </ul>
+                </li>
+            }
+        </ul>
+    </div>
+
+</div>

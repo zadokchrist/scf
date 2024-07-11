@@ -1,0 +1,11 @@
+D:\personal projects\AssetManagementDashboardInsideLogic\bin\Debug\AssetManagementDashboardInsideLogic.dll.config
+D:\personal projects\AssetManagementDashboardInsideLogic\bin\Debug\AssetManagementDashboardInsideLogic.dll
+D:\personal projects\AssetManagementDashboardInsideLogic\bin\Debug\AssetManagementDashboardInsideLogic.pdb
+D:\personal projects\AssetManagementDashboardInsideLogic\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.dll
+D:\personal projects\AssetManagementDashboardInsideLogic\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.dll
+D:\personal projects\AssetManagementDashboardInsideLogic\bin\Debug\Microsoft.Practices.ObjectBuilder.dll
+D:\personal projects\AssetManagementDashboardInsideLogic\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.xml
+D:\personal projects\AssetManagementDashboardInsideLogic\obj\Debug\AssetManagementDashboardInsideLogic.csproj.CoreCompileInputs.cache
+D:\personal projects\AssetManagementDashboardInsideLogic\obj\Debug\AssetManagementDashboardInsideLogic.csproj.CopyComplete
+D:\personal projects\AssetManagementDashboardInsideLogic\obj\Debug\AssetManagementDashboardInsideLogic.dll
+D:\personal projects\AssetManagementDashboardInsideLogic\obj\Debug\AssetManagementDashboardInsideLogic.pdb

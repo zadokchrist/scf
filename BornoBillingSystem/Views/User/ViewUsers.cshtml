@@ -1,0 +1,109 @@
+﻿@using AssetManagementDashboardInsideLogic.Models;
+@{
+    ViewBag.Title = "ViewUsers";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div class="">
+    <div class="page-title">
+        <div class="title_left">
+            <h3>Tables <small> of Users</small></h3>
+        </div>
+
+        <div class="title_right">
+            <div class="col-md-5 col-sm-5   form-group pull-right top_search">
+                <div class="input-group">
+                    <input type="text" class="form-control" placeholder="Search for...">
+                    <span class="input-group-btn">
+                        <button class="btn btn-default" type="button">Go!</button>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="clearfix"></div>
+
+    <div class="row" style="display: block;">
+        <div class="col-md-12 col-sm-12  ">
+            <div class="x_panel">
+                <div class="x_title">
+                    <h2>System <small>User table</small></h2>
+                    <ul class="nav navbar-right panel_toolbox">
+                        <li>
+                            <a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-wrench"></i></a>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <a class="dropdown-item" href="#">Settings 1</a>
+                                <a class="dropdown-item" href="#">Settings 2</a>
+                            </div>
+                        </li>
+                        <li>
+                            <a class="close-link"><i class="fa fa-close"></i></a>
+                        </li>
+                    </ul>
+                    <div class="clearfix"></div>
+                </div>
+
+                <div class="x_content">
+                    <button type="submit" class="btn btn-success" onclick="print();">Print Report</button>
+                    <h6 class="bg-green text-center">@ViewBag.Message</h6>
+                    <h6 class="bg-red text-center">@ViewBag.Error</h6>
+                    <div class="table-responsive">
+                        <table class="table table-striped jambo_table bulk_action" id="tabletoprint">
+                            <thead>
+                                <tr class="headings">
+                                    <th class="column-title">User id </th>
+                                    <th class="column-title">First Name</th>
+                                    <th class="column-title">Last Name</th>
+                                    <th class="column-title">User Name </th>
+                                    <th class="column-title">User Type </th>
+                                    <th class="column-title no-link last">
+                                        <span class="nobr">Action</span>
+                                    </th>
+                                    <th class="bulk-actions" colspan="7">
+                                        <a class="antoo" style="color:#fff; font-weight:500;">Bulk Actions ( <span class="action-cnt"> </span> ) <i class="fa fa-chevron-down"></i></a>
+                                    </th>
+                                </tr>
+                            </thead>
+
+                            <tbody>
+                                @if (ViewBag.SystemUsers != null)
+                                {
+                                    foreach (var user in ViewBag.SystemUsers)
+                                    {
+                                        <tr class="even pointer">
+                                            <td class=" ">@user.Uid</td>
+                                            <td class=" ">@user.Fname</td>
+                                            <td class=" ">@user.Lname</td>
+                                            <td class=" ">@user.Uname</td>
+                                            <td class=" ">@user.Utype</td>
+                                            <td class=" last">
+                                                <a href="~/User/EditUser?userid=@user.Uid" class="fa-edit">Edit</a>
+                                                <a href="~/User/Delete?userid=@user.Uid" class="fa-delicious">Disable</a>
+                                                <a href="~/User/ResetUser?userid=@user.Uid" class="fa-delicious">Reset Password</a>
+                                            </td>
+                                        </tr>
+                                    }
+
+                                }
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    //function print();
+    $(document).ready(function() {
+    $('#tabletoprint').DataTable( {
+        dom: 'Bfrtip',
+        buttons: [
+            'print'
+        ]
+    } );
+} );
+</script>

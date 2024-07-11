@@ -1,0 +1,13 @@
+D:\working directory\WSUPBilling System\BillingSystem\BillingSystem\BillingSystemLogic\obj\Release\BillingSystemLogic.csproj.CoreCompileInputs.cache
+D:\working directory\WSUPBilling System\BillingSystem\BillingSystem\BillingSystemLogic\bin\Release\BillingSystemLogic.dll.config
+D:\working directory\WSUPBilling System\BillingSystem\BillingSystem\BillingSystemLogic\bin\Release\BillingSystemLogic.dll
+D:\working directory\WSUPBilling System\BillingSystem\BillingSystem\BillingSystemLogic\bin\Release\BillingSystemLogic.pdb
+D:\working directory\WSUPBilling System\BillingSystem\BillingSystem\BillingSystemLogic\bin\Release\itextsharp.dll
+D:\working directory\WSUPBilling System\BillingSystem\BillingSystem\BillingSystemLogic\bin\Release\Microsoft.Practices.EnterpriseLibrary.Common.dll
+D:\working directory\WSUPBilling System\BillingSystem\BillingSystem\BillingSystemLogic\bin\Release\Microsoft.Practices.EnterpriseLibrary.Data.dll
+D:\working directory\WSUPBilling System\BillingSystem\BillingSystem\BillingSystemLogic\bin\Release\Microsoft.Practices.ObjectBuilder.dll
+D:\working directory\WSUPBilling System\BillingSystem\BillingSystem\BillingSystemLogic\bin\Release\itextsharp.xml
+D:\working directory\WSUPBilling System\BillingSystem\BillingSystem\BillingSystemLogic\bin\Release\Microsoft.Practices.EnterpriseLibrary.Common.xml
+D:\working directory\WSUPBilling System\BillingSystem\BillingSystem\BillingSystemLogic\obj\Release\BillingSystemLogic.csproj.CopyComplete
+D:\working directory\WSUPBilling System\BillingSystem\BillingSystem\BillingSystemLogic\obj\Release\BillingSystemLogic.dll
+D:\working directory\WSUPBilling System\BillingSystem\BillingSystem\BillingSystemLogic\obj\Release\BillingSystemLogic.pdb

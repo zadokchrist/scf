@@ -1,0 +1,316 @@
+D:\TraceCorps\Projects\Borno Systems\BillingSystem\BillingSystem\BornoBillingSystem\bin\NewAssetManagementSystem.dll.config
+D:\TraceCorps\Projects\Borno Systems\BillingSystem\BillingSystem\BornoBillingSystem\bin\NewAssetManagementSystem.dll
+D:\TraceCorps\Projects\Borno Systems\BillingSystem\BillingSystem\BornoBillingSystem\bin\NewAssetManagementSystem.pdb
+D:\TraceCorps\Projects\Borno Systems\BillingSystem\BillingSystem\BornoBillingSystem\bin\roslyn\csc.exe
+D:\TraceCorps\Projects\Borno Systems\BillingSystem\BillingSystem\BornoBillingSystem\bin\roslyn\csc.exe.config
+D:\TraceCorps\Projects\Borno Systems\BillingSystem\BillingSystem\BornoBillingSystem\bin\roslyn\csc.rsp
+D:\TraceCorps\Projects\Borno Systems\BillingSystem\BillingSystem\BornoBillingSystem\bin\roslyn\csi.exe
+D:\TraceCorps\Projects\Borno Systems\BillingSystem\BillingSystem\BornoBillingSystem\bin\roslyn\csi.exe.config
+D:\TraceCorps\Projects\Borno Systems\BillingSystem\BillingSystem\BornoBillingSystem\bin\roslyn\csi.rsp
+D:\TraceCorps\Projects\Borno Systems\BillingSystem\BillingSystem\BornoBillingSystem\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\TraceCorps\Projects\Borno Systems\BillingSystem\BillingSystem\BornoBillingSystem\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\TraceCorps\Projects\Borno Systems\BillingSystem\BillingSystem\BornoBillingSystem\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\TraceCorps\Projects\Borno Systems\BillingSystem\BillingSystem\BornoBillingSystem\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\TraceCorps\Projects\Borno Systems\BillingSystem\BillingSystem\BornoBillingSystem\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\TraceCorps\Projects\Borno Systems\BillingSystem\BillingSystem\BornoBillingSystem\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\TraceCorps\Projects\Borno Systems\BillingSystem\BillingSystem\BornoBillingSystem\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\TraceCorps\Projects\Borno Systems\BillingSystem\BillingSystem\BornoBillingSystem\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\TraceCorps\Projects\Borno Systems\BillingSystem\BillingSystem\BornoBillingSystem\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\TraceCorps\Projects\Borno Systems\BillingSystem\BillingSystem\BornoBillingSystem\bin\roslyn\Microsoft.Managed.Core.targets
+D:\TraceCorps\Projects\Borno Systems\BillingSystem\BillingSystem\BornoBillingSystem\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\TraceCorps\Projects\Borno Systems\BillingSystem\BillingSystem\BornoBillingSystem\bin\roslyn\System.AppContext.dll
+D:\TraceCorps\Projects\Borno Systems\BillingSystem\BillingSystem\BornoBillingSystem\bin\roslyn\System.Collections.Immutable.dll
+D:\TraceCorps\Projects\Borno Systems\BillingSystem\BillingSystem\BornoBillingSystem\bin\roslyn\System.Console.dll
+D:\TraceCorps\Projects\Borno Systems\BillingSystem\BillingSystem\BornoBillingSystem\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+D:\TraceCorps\Projects\Borno Systems\BillingSystem\BillingSystem\BornoBillingSystem\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\TraceCorps\Projects\Borno Systems\BillingSystem\BillingSystem\BornoBillingSystem\bin\roslyn\System.IO.Compression.dll
+D:\TraceCorps\Projects\Borno Systems\BillingSystem\BillingSystem\BornoBillingSystem\bin\roslyn\System.IO.FileSystem.dll
+D:\TraceCorps\Projects\Borno Systems\BillingSystem\BillingSystem\BornoBillingSystem\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\TraceCorps\Projects\Borno Systems\BillingSystem\BillingSystem\BornoBillingSystem\bin\roslyn\System.IO.Pipes.AccessControl.dll
+D:\TraceCorps\Projects\Borno Systems\BillingSystem\BillingSystem\BornoBillingSystem\bin\roslyn\System.IO.Pipes.dll
+D:\TraceCorps\Projects\Borno Systems\BillingSystem\BillingSystem\BornoBillingSystem\bin\roslyn\System.Reflection.Metadata.dll
+D:\TraceCorps\Projects\Borno Systems\BillingSystem\BillingSystem\BornoBillingSystem\bin\roslyn\System.Security.AccessControl.dll
+D:\TraceCorps\Projects\Borno Systems\BillingSystem\BillingSystem\BornoBillingSystem\bin\roslyn\System.Security.Claims.dll
+D:\TraceCorps\Projects\Borno Systems\BillingSystem\BillingSystem\BornoBillingSystem\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+D:\TraceCorps\Projects\Borno Systems\BillingSystem\BillingSystem\BornoBillingSystem\bin\roslyn\System.Security.Cryptography.Encoding.dll
+D:\TraceCorps\Projects\Borno Systems\BillingSystem\BillingSystem\BornoBillingSystem\bin\roslyn\System.Security.Cryptography.Primitives.dll
+D:\TraceCorps\Projects\Borno Systems\BillingSystem\BillingSystem\BornoBillingSystem\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+D:\TraceCorps\Projects\Borno Systems\BillingSystem\BillingSystem\BornoBillingSystem\bin\roslyn\System.Security.Principal.Windows.dll
+D:\TraceCorps\Projects\Borno Systems\BillingSystem\BillingSystem\BornoBillingSystem\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\TraceCorps\Projects\Borno Systems\BillingSystem\BillingSystem\BornoBillingSystem\bin\roslyn\System.ValueTuple.dll
+D:\TraceCorps\Projects\Borno Systems\BillingSystem\BillingSystem\BornoBillingSystem\bin\roslyn\System.Xml.ReaderWriter.dll
+D:\TraceCorps\Projects\Borno Systems\BillingSystem\BillingSystem\BornoBillingSystem\bin\roslyn\System.Xml.XmlDocument.dll
+D:\TraceCorps\Projects\Borno Systems\BillingSystem\BillingSystem\BornoBillingSystem\bin\roslyn\System.Xml.XPath.dll
+D:\TraceCorps\Projects\Borno Systems\BillingSystem\BillingSystem\BornoBillingSystem\bin\roslyn\System.Xml.XPath.XDocument.dll
+D:\TraceCorps\Projects\Borno Systems\BillingSystem\BillingSystem\BornoBillingSystem\bin\roslyn\vbc.exe
+D:\TraceCorps\Projects\Borno Systems\BillingSystem\BillingSystem\BornoBillingSystem\bin\roslyn\vbc.exe.config
+D:\TraceCorps\Projects\Borno Systems\BillingSystem\BillingSystem\BornoBillingSystem\bin\roslyn\vbc.rsp
+D:\TraceCorps\Projects\Borno Systems\BillingSystem\BillingSystem\BornoBillingSystem\bin\roslyn\VBCSCompiler.exe
+D:\TraceCorps\Projects\Borno Systems\BillingSystem\BillingSystem\BornoBillingSystem\bin\roslyn\VBCSCompiler.exe.config
+D:\TraceCorps\Projects\Borno Systems\BillingSystem\BillingSystem\BornoBillingSystem\bin\BillingSystemLogic.dll
+D:\TraceCorps\Projects\Borno Systems\BillingSystem\BillingSystem\BornoBillingSystem\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\TraceCorps\Projects\Borno Systems\BillingSystem\BillingSystem\BornoBillingSystem\bin\Microsoft.Web.Infrastructure.dll
+D:\TraceCorps\Projects\Borno Systems\BillingSystem\BillingSystem\BornoBillingSystem\bin\Newtonsoft.Json.dll
+D:\TraceCorps\Projects\Borno Systems\BillingSystem\BillingSystem\BornoBillingSystem\bin\System.Web.Helpers.dll
+D:\TraceCorps\Projects\Borno Systems\BillingSystem\BillingSystem\BornoBillingSystem\bin\System.Web.Mvc.dll
+D:\TraceCorps\Projects\Borno Systems\BillingSystem\BillingSystem\BornoBillingSystem\bin\System.Web.Razor.dll
+D:\TraceCorps\Projects\Borno Systems\BillingSystem\BillingSystem\BornoBillingSystem\bin\System.Web.Webpages.Deployment.dll
+D:\TraceCorps\Projects\Borno Systems\BillingSystem\BillingSystem\BornoBillingSystem\bin\System.Web.Webpages.dll
+D:\TraceCorps\Projects\Borno Systems\BillingSystem\BillingSystem\BornoBillingSystem\bin\System.Web.Webpages.Razor.dll
+D:\TraceCorps\Projects\Borno Systems\BillingSystem\BillingSystem\BornoBillingSystem\bin\Microsoft.Practices.EnterpriseLibrary.Data.dll
+D:\TraceCorps\Projects\Borno Systems\BillingSystem\BillingSystem\BornoBillingSystem\bin\Microsoft.Practices.EnterpriseLibrary.Common.dll
+D:\TraceCorps\Projects\Borno Systems\BillingSystem\BillingSystem\BornoBillingSystem\bin\Microsoft.Practices.ObjectBuilder.dll
+D:\TraceCorps\Projects\Borno Systems\BillingSystem\BillingSystem\BornoBillingSystem\bin\BillingSystemLogic.pdb
+D:\TraceCorps\Projects\Borno Systems\BillingSystem\BillingSystem\BornoBillingSystem\bin\BillingSystemLogic.dll.config
+D:\TraceCorps\Projects\Borno Systems\BillingSystem\BillingSystem\BornoBillingSystem\bin\Newtonsoft.Json.xml
+D:\TraceCorps\Projects\Borno Systems\BillingSystem\BillingSystem\BornoBillingSystem\bin\System.Web.Razor.xml
+D:\TraceCorps\Projects\Borno Systems\BillingSystem\BillingSystem\BornoBillingSystem\bin\System.Web.Webpages.xml
+D:\TraceCorps\Projects\Borno Systems\BillingSystem\BillingSystem\BornoBillingSystem\bin\System.Web.Webpages.Deployment.xml
+D:\TraceCorps\Projects\Borno Systems\BillingSystem\BillingSystem\BornoBillingSystem\bin\System.Web.Webpages.Razor.xml
+D:\TraceCorps\Projects\Borno Systems\BillingSystem\BillingSystem\BornoBillingSystem\bin\System.Web.Helpers.xml
+D:\TraceCorps\Projects\Borno Systems\BillingSystem\BillingSystem\BornoBillingSystem\bin\System.Web.Mvc.xml
+D:\TraceCorps\Projects\Borno Systems\BillingSystem\BillingSystem\BornoBillingSystem\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\TraceCorps\Projects\Borno Systems\BillingSystem\BillingSystem\BornoBillingSystem\obj\Release\BornoBillingSystem.csproj.CoreCompileInputs.cache
+D:\TraceCorps\Projects\Borno Systems\BillingSystem\BillingSystem\BornoBillingSystem\obj\Release\BornoBillingSystem.csproj.CopyComplete
+D:\TraceCorps\Projects\Borno Systems\BillingSystem\BillingSystem\BornoBillingSystem\obj\Release\NewAssetManagementSystem.dll
+D:\TraceCorps\Projects\Borno Systems\BillingSystem\BillingSystem\BornoBillingSystem\obj\Release\NewAssetManagementSystem.pdb
+D:\TraceCorps\Projects\Borno Systems\BillingSystem\BillingSystem\BornoBillingSystem\bin\itextsharp.dll
+D:\TraceCorps\Projects\Borno Systems\BillingSystem\BillingSystem\BornoBillingSystem\bin\itextsharp.xml
+D:\TraceCorps\Projects\Borno Systems\BillingSystem\BillingSystem\BornoBillingSystem\obj\Release\BornoBillingSystem.csprojAssemblyReference.cache
+D:\working directory\LTA Assignment\BillingSystem\BillingSystem\BornoBillingSystem\bin\NewAssetManagementSystem.dll.config
+D:\working directory\LTA Assignment\BillingSystem\BillingSystem\BornoBillingSystem\bin\NewAssetManagementSystem.dll
+D:\working directory\LTA Assignment\BillingSystem\BillingSystem\BornoBillingSystem\bin\NewAssetManagementSystem.pdb
+D:\working directory\LTA Assignment\BillingSystem\BillingSystem\BornoBillingSystem\bin\roslyn\csc.exe
+D:\working directory\LTA Assignment\BillingSystem\BillingSystem\BornoBillingSystem\bin\roslyn\csc.exe.config
+D:\working directory\LTA Assignment\BillingSystem\BillingSystem\BornoBillingSystem\bin\roslyn\csc.rsp
+D:\working directory\LTA Assignment\BillingSystem\BillingSystem\BornoBillingSystem\bin\roslyn\csi.exe
+D:\working directory\LTA Assignment\BillingSystem\BillingSystem\BornoBillingSystem\bin\roslyn\csi.exe.config
+D:\working directory\LTA Assignment\BillingSystem\BillingSystem\BornoBillingSystem\bin\roslyn\csi.rsp
+D:\working directory\LTA Assignment\BillingSystem\BillingSystem\BornoBillingSystem\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\working directory\LTA Assignment\BillingSystem\BillingSystem\BornoBillingSystem\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\working directory\LTA Assignment\BillingSystem\BillingSystem\BornoBillingSystem\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\working directory\LTA Assignment\BillingSystem\BillingSystem\BornoBillingSystem\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\working directory\LTA Assignment\BillingSystem\BillingSystem\BornoBillingSystem\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\working directory\LTA Assignment\BillingSystem\BillingSystem\BornoBillingSystem\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\working directory\LTA Assignment\BillingSystem\BillingSystem\BornoBillingSystem\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\working directory\LTA Assignment\BillingSystem\BillingSystem\BornoBillingSystem\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\working directory\LTA Assignment\BillingSystem\BillingSystem\BornoBillingSystem\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\working directory\LTA Assignment\BillingSystem\BillingSystem\BornoBillingSystem\bin\roslyn\Microsoft.Managed.Core.targets
+D:\working directory\LTA Assignment\BillingSystem\BillingSystem\BornoBillingSystem\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\working directory\LTA Assignment\BillingSystem\BillingSystem\BornoBillingSystem\bin\roslyn\System.AppContext.dll
+D:\working directory\LTA Assignment\BillingSystem\BillingSystem\BornoBillingSystem\bin\roslyn\System.Collections.Immutable.dll
+D:\working directory\LTA Assignment\BillingSystem\BillingSystem\BornoBillingSystem\bin\roslyn\System.Console.dll
+D:\working directory\LTA Assignment\BillingSystem\BillingSystem\BornoBillingSystem\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+D:\working directory\LTA Assignment\BillingSystem\BillingSystem\BornoBillingSystem\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\working directory\LTA Assignment\BillingSystem\BillingSystem\BornoBillingSystem\bin\roslyn\System.IO.Compression.dll
+D:\working directory\LTA Assignment\BillingSystem\BillingSystem\BornoBillingSystem\bin\roslyn\System.IO.FileSystem.dll
+D:\working directory\LTA Assignment\BillingSystem\BillingSystem\BornoBillingSystem\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\working directory\LTA Assignment\BillingSystem\BillingSystem\BornoBillingSystem\bin\roslyn\System.IO.Pipes.AccessControl.dll
+D:\working directory\LTA Assignment\BillingSystem\BillingSystem\BornoBillingSystem\bin\roslyn\System.IO.Pipes.dll
+D:\working directory\LTA Assignment\BillingSystem\BillingSystem\BornoBillingSystem\bin\roslyn\System.Reflection.Metadata.dll
+D:\working directory\LTA Assignment\BillingSystem\BillingSystem\BornoBillingSystem\bin\roslyn\System.Security.AccessControl.dll
+D:\working directory\LTA Assignment\BillingSystem\BillingSystem\BornoBillingSystem\bin\roslyn\System.Security.Claims.dll
+D:\working directory\LTA Assignment\BillingSystem\BillingSystem\BornoBillingSystem\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+D:\working directory\LTA Assignment\BillingSystem\BillingSystem\BornoBillingSystem\bin\roslyn\System.Security.Cryptography.Encoding.dll
+D:\working directory\LTA Assignment\BillingSystem\BillingSystem\BornoBillingSystem\bin\roslyn\System.Security.Cryptography.Primitives.dll
+D:\working directory\LTA Assignment\BillingSystem\BillingSystem\BornoBillingSystem\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+D:\working directory\LTA Assignment\BillingSystem\BillingSystem\BornoBillingSystem\bin\roslyn\System.Security.Principal.Windows.dll
+D:\working directory\LTA Assignment\BillingSystem\BillingSystem\BornoBillingSystem\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\working directory\LTA Assignment\BillingSystem\BillingSystem\BornoBillingSystem\bin\roslyn\System.ValueTuple.dll
+D:\working directory\LTA Assignment\BillingSystem\BillingSystem\BornoBillingSystem\bin\roslyn\System.Xml.ReaderWriter.dll
+D:\working directory\LTA Assignment\BillingSystem\BillingSystem\BornoBillingSystem\bin\roslyn\System.Xml.XmlDocument.dll
+D:\working directory\LTA Assignment\BillingSystem\BillingSystem\BornoBillingSystem\bin\roslyn\System.Xml.XPath.dll
+D:\working directory\LTA Assignment\BillingSystem\BillingSystem\BornoBillingSystem\bin\roslyn\System.Xml.XPath.XDocument.dll
+D:\working directory\LTA Assignment\BillingSystem\BillingSystem\BornoBillingSystem\bin\roslyn\vbc.exe
+D:\working directory\LTA Assignment\BillingSystem\BillingSystem\BornoBillingSystem\bin\roslyn\vbc.exe.config
+D:\working directory\LTA Assignment\BillingSystem\BillingSystem\BornoBillingSystem\bin\roslyn\vbc.rsp
+D:\working directory\LTA Assignment\BillingSystem\BillingSystem\BornoBillingSystem\bin\roslyn\VBCSCompiler.exe
+D:\working directory\LTA Assignment\BillingSystem\BillingSystem\BornoBillingSystem\bin\roslyn\VBCSCompiler.exe.config
+D:\working directory\LTA Assignment\BillingSystem\BillingSystem\BornoBillingSystem\bin\BillingSystemLogic.dll
+D:\working directory\LTA Assignment\BillingSystem\BillingSystem\BornoBillingSystem\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\working directory\LTA Assignment\BillingSystem\BillingSystem\BornoBillingSystem\bin\Microsoft.Web.Infrastructure.dll
+D:\working directory\LTA Assignment\BillingSystem\BillingSystem\BornoBillingSystem\bin\Newtonsoft.Json.dll
+D:\working directory\LTA Assignment\BillingSystem\BillingSystem\BornoBillingSystem\bin\System.Web.Helpers.dll
+D:\working directory\LTA Assignment\BillingSystem\BillingSystem\BornoBillingSystem\bin\System.Web.Mvc.dll
+D:\working directory\LTA Assignment\BillingSystem\BillingSystem\BornoBillingSystem\bin\System.Web.Razor.dll
+D:\working directory\LTA Assignment\BillingSystem\BillingSystem\BornoBillingSystem\bin\System.Web.Webpages.Deployment.dll
+D:\working directory\LTA Assignment\BillingSystem\BillingSystem\BornoBillingSystem\bin\System.Web.Webpages.dll
+D:\working directory\LTA Assignment\BillingSystem\BillingSystem\BornoBillingSystem\bin\System.Web.Webpages.Razor.dll
+D:\working directory\LTA Assignment\BillingSystem\BillingSystem\BornoBillingSystem\bin\itextsharp.dll
+D:\working directory\LTA Assignment\BillingSystem\BillingSystem\BornoBillingSystem\bin\Microsoft.Practices.EnterpriseLibrary.Data.dll
+D:\working directory\LTA Assignment\BillingSystem\BillingSystem\BornoBillingSystem\bin\Microsoft.Practices.EnterpriseLibrary.Common.dll
+D:\working directory\LTA Assignment\BillingSystem\BillingSystem\BornoBillingSystem\bin\Microsoft.Practices.ObjectBuilder.dll
+D:\working directory\LTA Assignment\BillingSystem\BillingSystem\BornoBillingSystem\bin\BillingSystemLogic.pdb
+D:\working directory\LTA Assignment\BillingSystem\BillingSystem\BornoBillingSystem\bin\Newtonsoft.Json.xml
+D:\working directory\LTA Assignment\BillingSystem\BillingSystem\BornoBillingSystem\bin\System.Web.Razor.xml
+D:\working directory\LTA Assignment\BillingSystem\BillingSystem\BornoBillingSystem\bin\System.Web.Webpages.xml
+D:\working directory\LTA Assignment\BillingSystem\BillingSystem\BornoBillingSystem\bin\System.Web.Webpages.Deployment.xml
+D:\working directory\LTA Assignment\BillingSystem\BillingSystem\BornoBillingSystem\bin\System.Web.Webpages.Razor.xml
+D:\working directory\LTA Assignment\BillingSystem\BillingSystem\BornoBillingSystem\bin\System.Web.Helpers.xml
+D:\working directory\LTA Assignment\BillingSystem\BillingSystem\BornoBillingSystem\bin\System.Web.Mvc.xml
+D:\working directory\LTA Assignment\BillingSystem\BillingSystem\BornoBillingSystem\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\working directory\LTA Assignment\BillingSystem\BillingSystem\BornoBillingSystem\bin\itextsharp.xml
+D:\working directory\LTA Assignment\BillingSystem\BillingSystem\BornoBillingSystem\obj\Release\NewAssetManagementSystem.dll
+D:\working directory\LTA Assignment\BillingSystem\BillingSystem\BornoBillingSystem\obj\Release\NewAssetManagementSystem.pdb
+D:\working directory\LTA Assignment\BillingSystem\BillingSystem\BornoBillingSystem\bin\BillingSystemLogic.dll.config
+D:\working directory\LTA Assignment\BillingSystem\BillingSystem\BornoBillingSystem\obj\Release\BornoBillingSystem.csproj.AssemblyReference.cache
+D:\working directory\LTA Assignment\BillingSystem\BillingSystem\BornoBillingSystem\obj\Release\BornoBillingSystem.csproj.CoreCompileInputs.cache
+D:\working directory\LTA Assignment\BillingSystem\BillingSystem\BornoBillingSystem\obj\Release\BornoBillingSystem.csproj.CopyComplete
+D:\working directory\WSUPBilling System\BillingSystem\BillingSystem\BornoBillingSystem\bin\NewAssetManagementSystem.dll.config
+D:\working directory\WSUPBilling System\BillingSystem\BillingSystem\BornoBillingSystem\bin\NewAssetManagementSystem.dll
+D:\working directory\WSUPBilling System\BillingSystem\BillingSystem\BornoBillingSystem\bin\NewAssetManagementSystem.pdb
+D:\working directory\WSUPBilling System\BillingSystem\BillingSystem\BornoBillingSystem\bin\roslyn\csc.exe
+D:\working directory\WSUPBilling System\BillingSystem\BillingSystem\BornoBillingSystem\bin\roslyn\csc.exe.config
+D:\working directory\WSUPBilling System\BillingSystem\BillingSystem\BornoBillingSystem\bin\roslyn\csc.rsp
+D:\working directory\WSUPBilling System\BillingSystem\BillingSystem\BornoBillingSystem\bin\roslyn\csi.exe
+D:\working directory\WSUPBilling System\BillingSystem\BillingSystem\BornoBillingSystem\bin\roslyn\csi.exe.config
+D:\working directory\WSUPBilling System\BillingSystem\BillingSystem\BornoBillingSystem\bin\roslyn\csi.rsp
+D:\working directory\WSUPBilling System\BillingSystem\BillingSystem\BornoBillingSystem\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\working directory\WSUPBilling System\BillingSystem\BillingSystem\BornoBillingSystem\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\working directory\WSUPBilling System\BillingSystem\BillingSystem\BornoBillingSystem\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\working directory\WSUPBilling System\BillingSystem\BillingSystem\BornoBillingSystem\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\working directory\WSUPBilling System\BillingSystem\BillingSystem\BornoBillingSystem\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\working directory\WSUPBilling System\BillingSystem\BillingSystem\BornoBillingSystem\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\working directory\WSUPBilling System\BillingSystem\BillingSystem\BornoBillingSystem\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\working directory\WSUPBilling System\BillingSystem\BillingSystem\BornoBillingSystem\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\working directory\WSUPBilling System\BillingSystem\BillingSystem\BornoBillingSystem\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\working directory\WSUPBilling System\BillingSystem\BillingSystem\BornoBillingSystem\bin\roslyn\Microsoft.Managed.Core.targets
+D:\working directory\WSUPBilling System\BillingSystem\BillingSystem\BornoBillingSystem\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\working directory\WSUPBilling System\BillingSystem\BillingSystem\BornoBillingSystem\bin\roslyn\System.AppContext.dll
+D:\working directory\WSUPBilling System\BillingSystem\BillingSystem\BornoBillingSystem\bin\roslyn\System.Collections.Immutable.dll
+D:\working directory\WSUPBilling System\BillingSystem\BillingSystem\BornoBillingSystem\bin\roslyn\System.Console.dll
+D:\working directory\WSUPBilling System\BillingSystem\BillingSystem\BornoBillingSystem\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+D:\working directory\WSUPBilling System\BillingSystem\BillingSystem\BornoBillingSystem\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\working directory\WSUPBilling System\BillingSystem\BillingSystem\BornoBillingSystem\bin\roslyn\System.IO.Compression.dll
+D:\working directory\WSUPBilling System\BillingSystem\BillingSystem\BornoBillingSystem\bin\roslyn\System.IO.FileSystem.dll
+D:\working directory\WSUPBilling System\BillingSystem\BillingSystem\BornoBillingSystem\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\working directory\WSUPBilling System\BillingSystem\BillingSystem\BornoBillingSystem\bin\roslyn\System.IO.Pipes.AccessControl.dll
+D:\working directory\WSUPBilling System\BillingSystem\BillingSystem\BornoBillingSystem\bin\roslyn\System.IO.Pipes.dll
+D:\working directory\WSUPBilling System\BillingSystem\BillingSystem\BornoBillingSystem\bin\roslyn\System.Reflection.Metadata.dll
+D:\working directory\WSUPBilling System\BillingSystem\BillingSystem\BornoBillingSystem\bin\roslyn\System.Security.AccessControl.dll
+D:\working directory\WSUPBilling System\BillingSystem\BillingSystem\BornoBillingSystem\bin\roslyn\System.Security.Claims.dll
+D:\working directory\WSUPBilling System\BillingSystem\BillingSystem\BornoBillingSystem\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+D:\working directory\WSUPBilling System\BillingSystem\BillingSystem\BornoBillingSystem\bin\roslyn\System.Security.Cryptography.Encoding.dll
+D:\working directory\WSUPBilling System\BillingSystem\BillingSystem\BornoBillingSystem\bin\roslyn\System.Security.Cryptography.Primitives.dll
+D:\working directory\WSUPBilling System\BillingSystem\BillingSystem\BornoBillingSystem\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+D:\working directory\WSUPBilling System\BillingSystem\BillingSystem\BornoBillingSystem\bin\roslyn\System.Security.Principal.Windows.dll
+D:\working directory\WSUPBilling System\BillingSystem\BillingSystem\BornoBillingSystem\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\working directory\WSUPBilling System\BillingSystem\BillingSystem\BornoBillingSystem\bin\roslyn\System.ValueTuple.dll
+D:\working directory\WSUPBilling System\BillingSystem\BillingSystem\BornoBillingSystem\bin\roslyn\System.Xml.ReaderWriter.dll
+D:\working directory\WSUPBilling System\BillingSystem\BillingSystem\BornoBillingSystem\bin\roslyn\System.Xml.XmlDocument.dll
+D:\working directory\WSUPBilling System\BillingSystem\BillingSystem\BornoBillingSystem\bin\roslyn\System.Xml.XPath.dll
+D:\working directory\WSUPBilling System\BillingSystem\BillingSystem\BornoBillingSystem\bin\roslyn\System.Xml.XPath.XDocument.dll
+D:\working directory\WSUPBilling System\BillingSystem\BillingSystem\BornoBillingSystem\bin\roslyn\vbc.exe
+D:\working directory\WSUPBilling System\BillingSystem\BillingSystem\BornoBillingSystem\bin\roslyn\vbc.exe.config
+D:\working directory\WSUPBilling System\BillingSystem\BillingSystem\BornoBillingSystem\bin\roslyn\vbc.rsp
+D:\working directory\WSUPBilling System\BillingSystem\BillingSystem\BornoBillingSystem\bin\roslyn\VBCSCompiler.exe
+D:\working directory\WSUPBilling System\BillingSystem\BillingSystem\BornoBillingSystem\bin\roslyn\VBCSCompiler.exe.config
+D:\working directory\WSUPBilling System\BillingSystem\BillingSystem\BornoBillingSystem\bin\BillingSystemLogic.dll
+D:\working directory\WSUPBilling System\BillingSystem\BillingSystem\BornoBillingSystem\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\working directory\WSUPBilling System\BillingSystem\BillingSystem\BornoBillingSystem\bin\Microsoft.Web.Infrastructure.dll
+D:\working directory\WSUPBilling System\BillingSystem\BillingSystem\BornoBillingSystem\bin\Newtonsoft.Json.dll
+D:\working directory\WSUPBilling System\BillingSystem\BillingSystem\BornoBillingSystem\bin\System.Web.Helpers.dll
+D:\working directory\WSUPBilling System\BillingSystem\BillingSystem\BornoBillingSystem\bin\System.Web.Mvc.dll
+D:\working directory\WSUPBilling System\BillingSystem\BillingSystem\BornoBillingSystem\bin\System.Web.Razor.dll
+D:\working directory\WSUPBilling System\BillingSystem\BillingSystem\BornoBillingSystem\bin\System.Web.Webpages.Deployment.dll
+D:\working directory\WSUPBilling System\BillingSystem\BillingSystem\BornoBillingSystem\bin\System.Web.Webpages.dll
+D:\working directory\WSUPBilling System\BillingSystem\BillingSystem\BornoBillingSystem\bin\System.Web.Webpages.Razor.dll
+D:\working directory\WSUPBilling System\BillingSystem\BillingSystem\BornoBillingSystem\bin\itextsharp.dll
+D:\working directory\WSUPBilling System\BillingSystem\BillingSystem\BornoBillingSystem\bin\Microsoft.Practices.EnterpriseLibrary.Data.dll
+D:\working directory\WSUPBilling System\BillingSystem\BillingSystem\BornoBillingSystem\bin\Microsoft.Practices.EnterpriseLibrary.Common.dll
+D:\working directory\WSUPBilling System\BillingSystem\BillingSystem\BornoBillingSystem\bin\Microsoft.Practices.ObjectBuilder.dll
+D:\working directory\WSUPBilling System\BillingSystem\BillingSystem\BornoBillingSystem\bin\BillingSystemLogic.pdb
+D:\working directory\WSUPBilling System\BillingSystem\BillingSystem\BornoBillingSystem\bin\Newtonsoft.Json.xml
+D:\working directory\WSUPBilling System\BillingSystem\BillingSystem\BornoBillingSystem\bin\System.Web.Razor.xml
+D:\working directory\WSUPBilling System\BillingSystem\BillingSystem\BornoBillingSystem\bin\System.Web.Webpages.xml
+D:\working directory\WSUPBilling System\BillingSystem\BillingSystem\BornoBillingSystem\bin\System.Web.Webpages.Deployment.xml
+D:\working directory\WSUPBilling System\BillingSystem\BillingSystem\BornoBillingSystem\bin\System.Web.Webpages.Razor.xml
+D:\working directory\WSUPBilling System\BillingSystem\BillingSystem\BornoBillingSystem\bin\System.Web.Helpers.xml
+D:\working directory\WSUPBilling System\BillingSystem\BillingSystem\BornoBillingSystem\bin\System.Web.Mvc.xml
+D:\working directory\WSUPBilling System\BillingSystem\BillingSystem\BornoBillingSystem\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\working directory\WSUPBilling System\BillingSystem\BillingSystem\BornoBillingSystem\obj\Release\NewAssetManagementSystem.dll
+D:\working directory\WSUPBilling System\BillingSystem\BillingSystem\BornoBillingSystem\obj\Release\NewAssetManagementSystem.pdb
+D:\working directory\WSUPBilling System\BillingSystem\BillingSystem\BornoBillingSystem\obj\Release\BornoBillingSystem.csproj.AssemblyReference.cache
+D:\working directory\WSUPBilling System\BillingSystem\BillingSystem\BornoBillingSystem\obj\Release\BornoBillingSystem.csproj.CoreCompileInputs.cache
+D:\working directory\WSUPBilling System\BillingSystem\BillingSystem\BornoBillingSystem\bin\BillingSystemLogic.dll.config
+D:\working directory\WSUPBilling System\BillingSystem\BillingSystem\BornoBillingSystem\bin\itextsharp.xml
+D:\working directory\WSUPBilling System\BillingSystem\BillingSystem\BornoBillingSystem\bin\Microsoft.Practices.EnterpriseLibrary.Common.xml
+D:\working directory\WSUPBilling System\BillingSystem\BillingSystem\BornoBillingSystem\obj\Release\BornoBillingSystem.csproj.CopyComplete
+E:\WSUPBilling System\BillingSystem\BillingSystem\BornoBillingSystem\bin\NewAssetManagementSystem.dll.config
+E:\WSUPBilling System\BillingSystem\BillingSystem\BornoBillingSystem\bin\NewAssetManagementSystem.dll
+E:\WSUPBilling System\BillingSystem\BillingSystem\BornoBillingSystem\bin\NewAssetManagementSystem.pdb
+E:\WSUPBilling System\BillingSystem\BillingSystem\BornoBillingSystem\bin\roslyn\csc.exe
+E:\WSUPBilling System\BillingSystem\BillingSystem\BornoBillingSystem\bin\roslyn\csc.exe.config
+E:\WSUPBilling System\BillingSystem\BillingSystem\BornoBillingSystem\bin\roslyn\csc.rsp
+E:\WSUPBilling System\BillingSystem\BillingSystem\BornoBillingSystem\bin\roslyn\csi.exe
+E:\WSUPBilling System\BillingSystem\BillingSystem\BornoBillingSystem\bin\roslyn\csi.exe.config
+E:\WSUPBilling System\BillingSystem\BillingSystem\BornoBillingSystem\bin\roslyn\csi.rsp
+E:\WSUPBilling System\BillingSystem\BillingSystem\BornoBillingSystem\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\WSUPBilling System\BillingSystem\BillingSystem\BornoBillingSystem\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\WSUPBilling System\BillingSystem\BillingSystem\BornoBillingSystem\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+E:\WSUPBilling System\BillingSystem\BillingSystem\BornoBillingSystem\bin\roslyn\Microsoft.CodeAnalysis.dll
+E:\WSUPBilling System\BillingSystem\BillingSystem\BornoBillingSystem\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+E:\WSUPBilling System\BillingSystem\BillingSystem\BornoBillingSystem\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\WSUPBilling System\BillingSystem\BillingSystem\BornoBillingSystem\bin\roslyn\Microsoft.CSharp.Core.targets
+E:\WSUPBilling System\BillingSystem\BillingSystem\BornoBillingSystem\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+E:\WSUPBilling System\BillingSystem\BillingSystem\BornoBillingSystem\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+E:\WSUPBilling System\BillingSystem\BillingSystem\BornoBillingSystem\bin\roslyn\Microsoft.Managed.Core.targets
+E:\WSUPBilling System\BillingSystem\BillingSystem\BornoBillingSystem\bin\roslyn\Microsoft.VisualBasic.Core.targets
+E:\WSUPBilling System\BillingSystem\BillingSystem\BornoBillingSystem\bin\roslyn\System.AppContext.dll
+E:\WSUPBilling System\BillingSystem\BillingSystem\BornoBillingSystem\bin\roslyn\System.Collections.Immutable.dll
+E:\WSUPBilling System\BillingSystem\BillingSystem\BornoBillingSystem\bin\roslyn\System.Console.dll
+E:\WSUPBilling System\BillingSystem\BillingSystem\BornoBillingSystem\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+E:\WSUPBilling System\BillingSystem\BillingSystem\BornoBillingSystem\bin\roslyn\System.Diagnostics.StackTrace.dll
+E:\WSUPBilling System\BillingSystem\BillingSystem\BornoBillingSystem\bin\roslyn\System.IO.Compression.dll
+E:\WSUPBilling System\BillingSystem\BillingSystem\BornoBillingSystem\bin\roslyn\System.IO.FileSystem.dll
+E:\WSUPBilling System\BillingSystem\BillingSystem\BornoBillingSystem\bin\roslyn\System.IO.FileSystem.Primitives.dll
+E:\WSUPBilling System\BillingSystem\BillingSystem\BornoBillingSystem\bin\roslyn\System.IO.Pipes.AccessControl.dll
+E:\WSUPBilling System\BillingSystem\BillingSystem\BornoBillingSystem\bin\roslyn\System.IO.Pipes.dll
+E:\WSUPBilling System\BillingSystem\BillingSystem\BornoBillingSystem\bin\roslyn\System.Reflection.Metadata.dll
+E:\WSUPBilling System\BillingSystem\BillingSystem\BornoBillingSystem\bin\roslyn\System.Security.AccessControl.dll
+E:\WSUPBilling System\BillingSystem\BillingSystem\BornoBillingSystem\bin\roslyn\System.Security.Claims.dll
+E:\WSUPBilling System\BillingSystem\BillingSystem\BornoBillingSystem\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+E:\WSUPBilling System\BillingSystem\BillingSystem\BornoBillingSystem\bin\roslyn\System.Security.Cryptography.Encoding.dll
+E:\WSUPBilling System\BillingSystem\BillingSystem\BornoBillingSystem\bin\roslyn\System.Security.Cryptography.Primitives.dll
+E:\WSUPBilling System\BillingSystem\BillingSystem\BornoBillingSystem\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+E:\WSUPBilling System\BillingSystem\BillingSystem\BornoBillingSystem\bin\roslyn\System.Security.Principal.Windows.dll
+E:\WSUPBilling System\BillingSystem\BillingSystem\BornoBillingSystem\bin\roslyn\System.Text.Encoding.CodePages.dll
+E:\WSUPBilling System\BillingSystem\BillingSystem\BornoBillingSystem\bin\roslyn\System.ValueTuple.dll
+E:\WSUPBilling System\BillingSystem\BillingSystem\BornoBillingSystem\bin\roslyn\System.Xml.ReaderWriter.dll
+E:\WSUPBilling System\BillingSystem\BillingSystem\BornoBillingSystem\bin\roslyn\System.Xml.XmlDocument.dll
+E:\WSUPBilling System\BillingSystem\BillingSystem\BornoBillingSystem\bin\roslyn\System.Xml.XPath.dll
+E:\WSUPBilling System\BillingSystem\BillingSystem\BornoBillingSystem\bin\roslyn\System.Xml.XPath.XDocument.dll
+E:\WSUPBilling System\BillingSystem\BillingSystem\BornoBillingSystem\bin\roslyn\vbc.exe
+E:\WSUPBilling System\BillingSystem\BillingSystem\BornoBillingSystem\bin\roslyn\vbc.exe.config
+E:\WSUPBilling System\BillingSystem\BillingSystem\BornoBillingSystem\bin\roslyn\vbc.rsp
+E:\WSUPBilling System\BillingSystem\BillingSystem\BornoBillingSystem\bin\roslyn\VBCSCompiler.exe
+E:\WSUPBilling System\BillingSystem\BillingSystem\BornoBillingSystem\bin\roslyn\VBCSCompiler.exe.config
+E:\WSUPBilling System\BillingSystem\BillingSystem\BornoBillingSystem\bin\BillingSystemLogic.dll
+E:\WSUPBilling System\BillingSystem\BillingSystem\BornoBillingSystem\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\WSUPBilling System\BillingSystem\BillingSystem\BornoBillingSystem\bin\Microsoft.Web.Infrastructure.dll
+E:\WSUPBilling System\BillingSystem\BillingSystem\BornoBillingSystem\bin\Newtonsoft.Json.dll
+E:\WSUPBilling System\BillingSystem\BillingSystem\BornoBillingSystem\bin\System.Web.Helpers.dll
+E:\WSUPBilling System\BillingSystem\BillingSystem\BornoBillingSystem\bin\System.Web.Mvc.dll
+E:\WSUPBilling System\BillingSystem\BillingSystem\BornoBillingSystem\bin\System.Web.Razor.dll
+E:\WSUPBilling System\BillingSystem\BillingSystem\BornoBillingSystem\bin\System.Web.Webpages.Deployment.dll
+E:\WSUPBilling System\BillingSystem\BillingSystem\BornoBillingSystem\bin\System.Web.Webpages.dll
+E:\WSUPBilling System\BillingSystem\BillingSystem\BornoBillingSystem\bin\System.Web.Webpages.Razor.dll
+E:\WSUPBilling System\BillingSystem\BillingSystem\BornoBillingSystem\bin\itextsharp.dll
+E:\WSUPBilling System\BillingSystem\BillingSystem\BornoBillingSystem\bin\Microsoft.Practices.EnterpriseLibrary.Data.dll
+E:\WSUPBilling System\BillingSystem\BillingSystem\BornoBillingSystem\bin\Microsoft.Practices.EnterpriseLibrary.Common.dll
+E:\WSUPBilling System\BillingSystem\BillingSystem\BornoBillingSystem\bin\Microsoft.Practices.ObjectBuilder.dll
+E:\WSUPBilling System\BillingSystem\BillingSystem\BornoBillingSystem\bin\BillingSystemLogic.pdb
+E:\WSUPBilling System\BillingSystem\BillingSystem\BornoBillingSystem\bin\BillingSystemLogic.dll.config
+E:\WSUPBilling System\BillingSystem\BillingSystem\BornoBillingSystem\bin\Newtonsoft.Json.xml
+E:\WSUPBilling System\BillingSystem\BillingSystem\BornoBillingSystem\bin\System.Web.Razor.xml
+E:\WSUPBilling System\BillingSystem\BillingSystem\BornoBillingSystem\bin\System.Web.Webpages.xml
+E:\WSUPBilling System\BillingSystem\BillingSystem\BornoBillingSystem\bin\System.Web.Webpages.Deployment.xml
+E:\WSUPBilling System\BillingSystem\BillingSystem\BornoBillingSystem\bin\System.Web.Webpages.Razor.xml
+E:\WSUPBilling System\BillingSystem\BillingSystem\BornoBillingSystem\bin\System.Web.Helpers.xml
+E:\WSUPBilling System\BillingSystem\BillingSystem\BornoBillingSystem\bin\System.Web.Mvc.xml
+E:\WSUPBilling System\BillingSystem\BillingSystem\BornoBillingSystem\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\WSUPBilling System\BillingSystem\BillingSystem\BornoBillingSystem\obj\Release\BornoBillingSystem.csproj.AssemblyReference.cache
+E:\WSUPBilling System\BillingSystem\BillingSystem\BornoBillingSystem\obj\Release\BornoBillingSystem.csproj.CoreCompileInputs.cache
+E:\WSUPBilling System\BillingSystem\BillingSystem\BornoBillingSystem\obj\Release\BornoBil.4D4ED860.Up2Date
+E:\WSUPBilling System\BillingSystem\BillingSystem\BornoBillingSystem\obj\Release\NewAssetManagementSystem.dll
+E:\WSUPBilling System\BillingSystem\BillingSystem\BornoBillingSystem\obj\Release\NewAssetManagementSystem.pdb

@@ -1,0 +1,114 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{2D5E4C8A-E25E-4499-94E3-3F71D43CCA3C}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>BillingSystemLogic</RootNamespace>
+    <AssemblyName>BillingSystemLogic</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="itextsharp">
+      <HintPath>..\..\..\..\LTA Assignment\BillingService\bin\Debug\itextsharp.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Common">
+      <HintPath>..\..\..\..\LTA Assignment\BillingService\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Data">
+      <HintPath>..\..\..\..\LTA Assignment\BillingService\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.ObjectBuilder">
+      <HintPath>..\..\..\..\LTA Assignment\BillingService\bin\Debug\Microsoft.Practices.ObjectBuilder.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Class1.cs" />
+    <Compile Include="Logic\BillImage.cs" />
+    <Compile Include="Logic\BillingProcessor.cs" />
+    <Compile Include="Logic\ConfigurationProcessor.cs" />
+    <Compile Include="Logic\CustomerProcessor.cs" />
+    <Compile Include="Logic\CustomerTypeProcessor.cs" />
+    <Compile Include="Logic\DatabaseHandler.cs" />
+    <Compile Include="Logic\EmailProcessor.cs" />
+    <Compile Include="Logic\ManagerProcessor.cs" />
+    <Compile Include="Logic\OfficeProcessor.cs" />
+    <Compile Include="Logic\Processor.cs" />
+    <Compile Include="Logic\LocationProcessor.cs" />
+    <Compile Include="Logic\ReportProcessor.cs" />
+    <Compile Include="Logic\StaffProcessor.cs" />
+    <Compile Include="Logic\SystemProcessor.cs" />
+    <Compile Include="Logic\TarrifChargeProcessor.cs" />
+    <Compile Include="Logic\UserProcessor.cs" />
+    <Compile Include="Models\Account.cs" />
+    <Compile Include="Models\AccountStatement.cs" />
+    <Compile Include="Models\AssignmentModel.cs" />
+    <Compile Include="Models\Billing.cs" />
+    <Compile Include="Models\Category.cs" />
+    <Compile Include="Models\ConnectionReport.cs" />
+    <Compile Include="Models\ConnectionType.cs" />
+    <Compile Include="Models\Customer.cs" />
+    <Compile Include="Models\CustomerLTA.cs" />
+    <Compile Include="Models\CustomerPayment.cs" />
+    <Compile Include="Models\CustomerStatment.cs" />
+    <Compile Include="Models\CustomerType.cs" />
+    <Compile Include="Models\District.cs" />
+    <Compile Include="Models\FileUpload.cs" />
+    <Compile Include="Models\GenericResponse.cs" />
+    <Compile Include="Models\Manager.cs" />
+    <Compile Include="Models\MeterReading.cs" />
+    <Compile Include="Models\Office.cs" />
+    <Compile Include="Models\PaidUpaid.cs" />
+    <Compile Include="Models\PaymentSearch.cs" />
+    <Compile Include="Models\Region.cs" />
+    <Compile Include="Models\Scheme.cs" />
+    <Compile Include="Models\SoftwareStock.cs" />
+    <Compile Include="Models\DbStoredProcConfigurations.cs" />
+    <Compile Include="Models\Staff.cs" />
+    <Compile Include="Models\SystemUser.cs" />
+    <Compile Include="Models\TarrifCharge.cs" />
+    <Compile Include="Models\UserRole.cs" />
+    <Compile Include="Models\Utility.cs" />
+    <Compile Include="Models\Vendor.cs" />
+    <Compile Include="Models\Village.cs" />
+    <Compile Include="Models\Zone.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

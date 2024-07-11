@@ -1,0 +1,50 @@
+D:\TraceCorps\Projects\Borno Systems\BillingSystem\BillingSystem\AssetManagementDashboardInsideLogic\bin\Debug\AssetManagementDashboardInsideLogic.dll.config
+D:\TraceCorps\Projects\Borno Systems\BillingSystem\BillingSystem\AssetManagementDashboardInsideLogic\bin\Debug\AssetManagementDashboardInsideLogic.dll
+D:\TraceCorps\Projects\Borno Systems\BillingSystem\BillingSystem\AssetManagementDashboardInsideLogic\bin\Debug\AssetManagementDashboardInsideLogic.pdb
+D:\TraceCorps\Projects\Borno Systems\BillingSystem\BillingSystem\AssetManagementDashboardInsideLogic\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.xml
+D:\TraceCorps\Projects\Borno Systems\BillingSystem\BillingSystem\AssetManagementDashboardInsideLogic\obj\Debug\BillingSystemLogic.csprojAssemblyReference.cache
+D:\TraceCorps\Projects\Borno Systems\BillingSystem\BillingSystem\AssetManagementDashboardInsideLogic\obj\Debug\BillingSystemLogic.csproj.CoreCompileInputs.cache
+D:\TraceCorps\Projects\Borno Systems\BillingSystem\BillingSystem\AssetManagementDashboardInsideLogic\obj\Debug\BillingSystemLogic.csproj.CopyComplete
+D:\TraceCorps\Projects\Borno Systems\BillingSystem\BillingSystem\AssetManagementDashboardInsideLogic\obj\Debug\AssetManagementDashboardInsideLogic.dll
+D:\TraceCorps\Projects\Borno Systems\BillingSystem\BillingSystem\AssetManagementDashboardInsideLogic\obj\Debug\AssetManagementDashboardInsideLogic.pdb
+D:\TraceCorps\Projects\Borno Systems\BillingSystem\BillingSystem\BillingSystemLogic\bin\Debug\BillingSystemLogic.dll.config
+D:\TraceCorps\Projects\Borno Systems\BillingSystem\BillingSystem\BillingSystemLogic\bin\Debug\BillingSystemLogic.dll
+D:\TraceCorps\Projects\Borno Systems\BillingSystem\BillingSystem\BillingSystemLogic\bin\Debug\BillingSystemLogic.pdb
+D:\TraceCorps\Projects\Borno Systems\BillingSystem\BillingSystem\BillingSystemLogic\bin\Debug\itextsharp.dll
+D:\TraceCorps\Projects\Borno Systems\BillingSystem\BillingSystem\BillingSystemLogic\bin\Debug\itextsharp.xml
+D:\TraceCorps\Projects\Borno Systems\BillingSystem\BillingSystem\BillingSystemLogic\obj\Debug\BillingSystemLogic.csproj.CoreCompileInputs.cache
+D:\TraceCorps\Projects\Borno Systems\BillingSystem\BillingSystem\BillingSystemLogic\obj\Debug\BillingSystemLogic.csproj.CopyComplete
+D:\TraceCorps\Projects\Borno Systems\BillingSystem\BillingSystem\BillingSystemLogic\obj\Debug\BillingSystemLogic.dll
+D:\TraceCorps\Projects\Borno Systems\BillingSystem\BillingSystem\BillingSystemLogic\obj\Debug\BillingSystemLogic.pdb
+D:\working directory\LTA Assignment\BillingSystem\BillingSystem\BillingSystemLogic\bin\Debug\BillingSystemLogic.dll.config
+D:\working directory\LTA Assignment\BillingSystem\BillingSystem\BillingSystemLogic\bin\Debug\BillingSystemLogic.dll
+D:\working directory\LTA Assignment\BillingSystem\BillingSystem\BillingSystemLogic\bin\Debug\BillingSystemLogic.pdb
+D:\working directory\LTA Assignment\BillingSystem\BillingSystem\BillingSystemLogic\obj\Debug\BillingSystemLogic.dll
+D:\working directory\LTA Assignment\BillingSystem\BillingSystem\BillingSystemLogic\obj\Debug\BillingSystemLogic.pdb
+D:\working directory\LTA Assignment\BillingSystem\BillingSystem\BillingSystemLogic\bin\Debug\itextsharp.dll
+D:\working directory\LTA Assignment\BillingSystem\BillingSystem\BillingSystemLogic\bin\Debug\itextsharp.xml
+D:\working directory\LTA Assignment\BillingSystem\BillingSystem\BillingSystemLogic\obj\Debug\BillingSystemLogic.csproj.AssemblyReference.cache
+D:\working directory\LTA Assignment\BillingSystem\BillingSystem\BillingSystemLogic\obj\Debug\BillingSystemLogic.csproj.CoreCompileInputs.cache
+D:\working directory\LTA Assignment\BillingSystem\BillingSystem\BillingSystemLogic\obj\Debug\BillingSystemLogic.csproj.CopyComplete
+D:\working directory\WSUPBilling System\BillingSystem\BillingSystem\BillingSystemLogic\bin\Debug\BillingSystemLogic.dll.config
+D:\working directory\WSUPBilling System\BillingSystem\BillingSystem\BillingSystemLogic\bin\Debug\BillingSystemLogic.dll
+D:\working directory\WSUPBilling System\BillingSystem\BillingSystem\BillingSystemLogic\bin\Debug\BillingSystemLogic.pdb
+D:\working directory\WSUPBilling System\BillingSystem\BillingSystem\BillingSystemLogic\obj\Debug\BillingSystemLogic.dll
+D:\working directory\WSUPBilling System\BillingSystem\BillingSystem\BillingSystemLogic\obj\Debug\BillingSystemLogic.pdb
+D:\working directory\WSUPBilling System\BillingSystem\BillingSystem\BillingSystemLogic\bin\Debug\itextsharp.dll
+D:\working directory\WSUPBilling System\BillingSystem\BillingSystem\BillingSystemLogic\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.dll
+D:\working directory\WSUPBilling System\BillingSystem\BillingSystem\BillingSystemLogic\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.dll
+D:\working directory\WSUPBilling System\BillingSystem\BillingSystem\BillingSystemLogic\bin\Debug\Microsoft.Practices.ObjectBuilder.dll
+D:\working directory\WSUPBilling System\BillingSystem\BillingSystem\BillingSystemLogic\bin\Debug\itextsharp.xml
+D:\working directory\WSUPBilling System\BillingSystem\BillingSystem\BillingSystemLogic\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.xml
+D:\working directory\WSUPBilling System\BillingSystem\BillingSystem\BillingSystemLogic\obj\Debug\BillingSystemLogic.csproj.CoreCompileInputs.cache
+D:\working directory\WSUPBilling System\BillingSystem\BillingSystem\BillingSystemLogic\obj\Debug\BillingSystemLogic.csproj.CopyComplete
+D:\working directory\WSUPBilling System\BillingSystem\BillingSystem\BillingSystemLogic\obj\Debug\BillingSystemLogic.csproj.AssemblyReference.cache
+E:\WSUPBilling System\BillingSystem\BillingSystem\BillingSystemLogic\bin\Debug\BillingSystemLogic.dll.config
+E:\WSUPBilling System\BillingSystem\BillingSystem\BillingSystemLogic\bin\Debug\BillingSystemLogic.dll
+E:\WSUPBilling System\BillingSystem\BillingSystem\BillingSystemLogic\bin\Debug\BillingSystemLogic.pdb
+E:\WSUPBilling System\BillingSystem\BillingSystem\BillingSystemLogic\obj\Debug\BillingSystemLogic.csproj.AssemblyReference.cache
+E:\WSUPBilling System\BillingSystem\BillingSystem\BillingSystemLogic\obj\Debug\BillingSystemLogic.csproj.CoreCompileInputs.cache
+E:\WSUPBilling System\BillingSystem\BillingSystem\BillingSystemLogic\obj\Debug\BillingS.9DC48B42.Up2Date
+E:\WSUPBilling System\BillingSystem\BillingSystem\BillingSystemLogic\obj\Debug\BillingSystemLogic.dll
+E:\WSUPBilling System\BillingSystem\BillingSystem\BillingSystemLogic\obj\Debug\BillingSystemLogic.pdb

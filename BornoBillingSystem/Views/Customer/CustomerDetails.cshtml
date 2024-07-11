@@ -1,0 +1,175 @@
+﻿@model List<BillingSystemLogic.Models.Customer>
+@{
+    ViewBag.Title = "CreateCustomer";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="">
+    <div class="page-title">
+        <div class="title_left">
+            <h3>Create Customer</h3>
+        </div>
+
+        <div class="title_right">
+            <div class="col-md-5 col-sm-5  form-group pull-right top_search">
+                <div class="input-group">
+                    <input type="text" class="form-control" placeholder="Search for...">
+                    <span class="input-group-btn">
+                        <button class="btn btn-default" type="button">Go!</button>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="clearfix"></div>
+    <div class="row">
+        <div class="col-md-12 col-sm-12 ">
+            <div class="x_panel">
+                <div class="x_title">
+                    <h2>Enter Customer Information</h2>
+                    <ul class="nav navbar-right panel_toolbox">
+                        <li>
+                            <a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-wrench"></i></a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li>
+                                    <a class="dropdown-item" href="#">Settings 1</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#">Settings 2</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="close-link"><i class="fa fa-close"></i></a>
+                        </li>
+                    </ul>
+                    <div class="clearfix"></div>
+                </div>
+                <div class="x_content">
+                    <br />
+                    <h6 class="bg-green text-center">@ViewBag.Message</h6>
+                    <h6 class="bg-red text-center">@ViewBag.Error</h6>
+                    <div class="item form-group">
+                        <div class="col-md-11 col-sm-11 offset-md-11">
+                            <a href="~/Customer/ViewCustomers" class="btn btn-success">BACK</a>
+                        </div>
+                    </div>
+                    @if (Model != null && Model.Count > 0)
+                    {
+                        <form class="form-horizontal form-label-left">
+                            <div class="item form-group">
+                                <label class="col-form-label col-md-3 col-sm-3 label-align" for="vendor-name">
+                                    Customer Name <span class="required">*</span>
+                                </label>
+                                <div class="col-md-6 col-sm-6 ">
+                                    <input type="text" value="@Model[0].Name" class="form-control" disabled />
+                                </div>
+                            </div>
+                            <div class="item form-group">
+                                <label class="col-form-label col-md-3 col-sm-3 label-align" for="room-name">
+                                    Contact<span class="required">*</span>
+                                </label>
+                                <div class="col-md-6 col-sm-6 ">
+                                    <input type="text" value="@Model[0].Contact" class="form-control" disabled />
+                                </div>
+                            </div>
+                            <div class="item form-group">
+                                <label class="col-form-label col-md-3 col-sm-3 label-align" for="room-name">
+                                    District<span class="required">*</span>
+                                </label>
+                                <div class="col-md-6 col-sm-6 ">
+                                    <input type="text" value="@Model[0].District" class="form-control" disabled />
+                                </div>
+                            </div>
+                            <div class="item form-group">
+                                <label class="col-form-label col-md-3 col-sm-3 label-align" for="room-name">
+                                    Village<span class="required">*</span>
+                                </label>
+                                <div class="col-md-6 col-sm-6 ">
+                                    <input type="text" value="@Model[0].Village" class="form-control" disabled />
+                                </div>
+                            </div>
+                            <div class="item form-group">
+                                <label class="col-form-label col-md-3 col-sm-3 label-align" for="room-name">
+                                    Customer Ref<span class="required">*</span>
+                                </label>
+                                <div class="col-md-6 col-sm-6 ">
+                                    <input type="text" value="@Model[0].CustomerRef" class="form-control" disabled />
+                                </div>
+                            </div>
+                            <div class="item form-group">
+                                <label class="col-form-label col-md-3 col-sm-3 label-align" for="room-name">
+                                    Meter No<span class="required">*</span>
+                                </label>
+                                <div class="col-md-6 col-sm-6 ">
+                                    <input type="text" value="@Model[0].MeterNo" class="form-control" disabled />
+                                </div>
+                            </div>
+                            <div class="item form-group">
+                                <label class="col-form-label col-md-3 col-sm-3 label-align" for="room-name">
+                                    Application Id<span class="required">*</span>
+                                </label>
+                                <div class="col-md-6 col-sm-6 ">
+                                    <input type="text" value="@Model[0].ApplicationId" class="form-control" disabled />
+                                </div>
+                            </div>
+                            <div class="item form-group">
+                                <label class="col-form-label col-md-3 col-sm-3 label-align" for="room-name">
+                                    Id Type<span class="required">*</span>
+                                </label>
+                                <div class="col-md-6 col-sm-6 ">
+                                    <div class="col-md-6 col-sm-6">
+                                        <input type="text" value="@Model[0].IdType" class="form-control" disabled />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item form-group">
+                                <label class="col-form-label col-md-3 col-sm-3 label-align" for="room-name">
+                                    Id Number<span class="required">*</span>
+                                </label>
+                                <div class="col-md-6 col-sm-6 ">
+                                    <input type="text" value="@Model[0].Id_number" class="form-control" disabled />
+                                </div>
+                            </div>
+                            <div class="item form-group">
+                                <label class="col-form-label col-md-3 col-sm-3 label-align" for="room-name">
+                                    Balance <span class="required">*</span>
+                                </label>
+                                <div class="col-md-6 col-sm-6 ">
+                                    <input type="text" value="@Model[0].Balance" class="form-control" disabled />
+                                </div>
+                            </div>
+                            <div class="ln_solid"></div>
+                            <div class="item form-group">
+                                <label class="col-form-label col-md-3 col-sm-3 label-align" for="room-name">
+                                    Recommendation letter
+                                </label>
+                                <label class="col-form-label col-md-3 col-sm-3 label-align" for="room-name">
+                                    Repayment Agreement
+                                </label>
+                                <label class="col-form-label col-md-3 col-sm-3 label-align" for="room-name">
+                                    Scanned ID Copy
+                                </label>
+                                <label class="col-form-label col-md-3 col-sm-3 label-align" for="room-name">
+                                    Wealth Assessment Form
+                                </label>
+                            </div>
+                            <div class="item form-group">
+                                <div class="col-sm-0"></div>
+                                <a href="~/Customer/DownloadFile?filePath=@Model[0].RecomLetter" class="btn btn-primary col-md-3">Download</a>
+                                <a href="~/Customer/DownloadFile?filePath=@Model[0].RepaymentAgreement" class="btn btn-primary col-md-3">Download</a>
+                                <a href="~/Customer/DownloadFile?filePath=@Model[0].IdLoc" class="btn btn-primary col-md-3">Download</a>
+                                <a href="~/Customer/DownloadFile?filePath=@Model[0].WealthAssessmentForm" class="btn btn-primary col-md-3">Download</a>
+                            </div>
+                            <div class="ln_solid"></div>
+                </form>
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+

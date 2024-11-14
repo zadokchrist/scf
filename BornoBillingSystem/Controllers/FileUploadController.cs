@@ -62,6 +62,7 @@ namespace NewAssetManagementSystem.Controllers
         {
             try
             {
+                throw new Exception("Invalid file uploaded");
                 if (ModelState.IsValid)
                 {
                     string serverpath = Server.MapPath("~/Files/ConsumptionFiles/");

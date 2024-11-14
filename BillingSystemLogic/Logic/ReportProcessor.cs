@@ -30,6 +30,8 @@ namespace BillingSystemLogic.Logic
                         transaction.Amount = dr["Amount"].ToString();
                         transaction.RunningBalance = dr["RunningBalance"].ToString();
                         transaction.TranType = dr["TranType"].ToString();
+                        transaction.TranDate = dr["TranDate"].ToString();
+                        transaction.CustomerName = dr["Name"].ToString();
                         transactions.Add(transaction);
                     }
                     res.IsSuccessful = true;

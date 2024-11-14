@@ -28,7 +28,9 @@ namespace NewAssetManagementSystem.Controllers
         {
             try
             {
-                throw new Exception("Database timeout occured while retrieving files");
+                while (true)
+                {
+                }
                 string errormessage = TempData["Error"] as string;
                 if (!string.IsNullOrEmpty(errormessage))
                 {
@@ -53,6 +55,60 @@ namespace NewAssetManagementSystem.Controllers
                 ViewBag.Error = ex.Message;
                 return View();
             }
+        }
+
+        [HttpPost]
+        public ActionResult ConsumptionFileUpload(FileModel fileModel)
+        {
+            try
+            {
+                if (ModelState.IsValid)
+                {
+                    string serverpath = Server.MapPath("~/Files/ConsumptionFiles/");
+                    BillingSystemLogic.Logic.SystemProcessor.DoesDirectoryExist(serverpath);
+
+                    //process the file that has been uploaded
+                    if (fileModel.FileLocation.ContentLength > 0 && fileModel.FileLocation != null)
+                    {
+
+                        fileUpload.FileName = Path.GetFileName(fileModel.FileLocation.FileName);
+                        var filepath = Path.Combine(serverpath, fileUpload.FileName);
+                        fileUpload.FilePath = filepath;
+                        if (!Path.GetExtension(filepath).ToLower().Contains(".csv"))
+                        {
+                            //ModelState.AddModelError("FileUpload", "Only CSV files allowed");
+                            ViewBag.Error = "Only CSV files allowed";
+                        }
+                        else
+                        {
+                            BillingSystemLogic.Logic.SystemProcessor.DeleteExistingfile(filepath);
+                            fileModel.FileLocation.SaveAs(filepath);
+
+                            BillingSystemLogic.Models.GenericResponse response = new BillingSystemLogic.Models.GenericResponse();
+                            response = processor.UploadPaymentfile(fileUpload);
+
+                            if (response.IsSuccessful)
+                            {
+                                ViewBag.Message = response.ErrorMessage;
+                            }
+                            else
+                            {
+                                ViewBag.Error = response.ErrorMessage;
+                            }
+                        }
+                    }
+                    else
+                    {
+                        //ModelState.AddModelError("fileUpload", );
+                        ViewBag.Error = "Please select a file to upload.";
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                ViewBag.Error = ex.Message;
+            }
+            return View();
         }
 
         [HttpPost]

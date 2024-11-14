@@ -13,5 +13,7 @@ namespace BillingSystemLogic.Models
         public string Amount { get; set; }
         public string RunningBalance { get; set; }
         public string TranType { get; set; }
+        public string TranDate { get; set; }
+        public string CustomerName { get; set; }
     }
 }

@@ -59,7 +59,7 @@
                 <li>
                     <a><i class="fa fa-bank"></i> Consuption <span class="fa fa-chevron-down"></span></a>
                     <ul class="nav child_menu">
-                        <li><a href="~/FileUpload/ConsumptionFileUpload">Payment File</a></li>
+                        <li><a href="~/FileUpload/ConsumptionFileUpload">Consumption File</a></li>
                         <li><a href="~/FileUpload/ViewUploadedConsumptionFiles">View Cnsumption Data</a></li>
                     </ul>
                 </li>
@@ -115,12 +115,7 @@
                         <li><a href="~/Report/CustomerStatement">Custmer Statement</a></li>
                     </ul>
                 </li>
-            }
-            else if (Session["UserRole"].ToString().Equals("1") || Session["UserRole"].ToString().Equals("2") ||
-                Session["UserRole"].ToString().Equals("3") || Session["UserRole"].ToString().Equals("4") ||
-                Session["UserRole"].ToString().Equals("5"))
-            {
-                <li>
+            } <li>
                     <a><i class="fa fa-bank"></i> Reports <span class="fa fa-chevron-down"></span></a>
                     <ul class="nav child_menu">
                         <li><a href="~/Report/ConnectionReport">Connection Report</a></li>
@@ -130,7 +125,6 @@
                         <li><a href="~/Report/CustomerStatement">Custmer Statement</a></li>
                     </ul>
                 </li>
-            }
 
             @if (Session["UserRole"].ToString().Equals("2"))//accounting
             {

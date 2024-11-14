@@ -1,8 +1,23 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <!--
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.Default.props" Condition="Exists('$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.Default.props')" />
   -->
+  <!-- Target to dynamically remove missing files -->
+  <Target Name="RemoveAllMissingFiles" BeforeTargets="Build">
+    <!-- Check all content files and remove the ones that do not exist -->
+    <ItemGroup>
+      <Content Remove="@(Content)" Condition="!Exists('%(Content.FullPath)')" />
+    </ItemGroup>
+    <!-- Check all other files like None (e.g., text files, config files) and remove the missing ones -->
+    <ItemGroup>
+      <None Remove="@(None)" Condition="!Exists('%(None.FullPath)')" />
+    </ItemGroup>
+    <!-- Check any other custom item groups if needed (e.g., Compile, Resources) -->
+    <ItemGroup>
+      <Compile Remove="@(Compile)" Condition="!Exists('%(Compile.FullPath)')" />
+    </ItemGroup>
+  </Target>
   <Import Project="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
@@ -4904,6 +4919,10 @@
     <Content Include="Views\Report\ConnectionReportByType.cshtml" />
     <Content Include="Views\Home\ChangePwd.cshtml" />
     <Content Include="Views\Customer\EditCustomer.cshtml" />
+    <Content Include="Views\Report\BalanceReport.cshtml" />
+    <None Include="Properties\PublishProfiles\PublishEquitable.pubxml" />
+    <Content Include="Views\FileUpload\ConsumptionFileUpload.cshtml" />
+    <Content Include="Views\FileUpload\ViewUploadedConsumptionFiles.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

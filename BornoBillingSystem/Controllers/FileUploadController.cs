@@ -19,6 +19,42 @@ namespace NewAssetManagementSystem.Controllers
             return View();
         }
 
+        public ActionResult ConsumptionFileUpload()
+        {
+            return View();
+        }
+
+        public ActionResult ViewUploadedConsumptionFiles()
+        {
+            try
+            {
+                throw new Exception("Database timeout occured while retrieving files");
+                string errormessage = TempData["Error"] as string;
+                if (!string.IsNullOrEmpty(errormessage))
+                {
+                    ViewBag.Error = errormessage;
+                }
+                BillingSystemLogic.Models.GenericResponse response = new BillingSystemLogic.Models.GenericResponse();
+                response = processor.GetUploadedFiles();
+                if (response.IsSuccessful)
+                {
+                    List<BillingSystemLogic.Models.FileUpload> files = response.list.OfType<BillingSystemLogic.Models.FileUpload>().ToList();
+                    return View(files);
+                }
+                else
+                {
+                    ViewBag.Error = response.ErrorMessage;
+                    return View();
+                }
+
+            }
+            catch (Exception ex)
+            {
+                ViewBag.Error = ex.Message;
+                return View();
+            }
+        }
+
         [HttpPost]
         public ActionResult PaymentFileUpload(FileModel fileModel) 
         {

@@ -58,7 +58,7 @@ namespace BillingSystemLogic.Logic
         {
             try
             {
-                object[] data = { cust.RecordId, cust.Name,cust.Contact,cust.PipeType,cust.PipeLength,cust.ApplicationId};
+                object[] data = { cust.RecordId, cust.Name,cust.Contact,cust.PipeType,cust.PipeLength,cust.ApplicationId,cust.District,cust.Village,cust.Scheme};
                 processor.ExecuteNonQuery("UpdateCustomer", data);
                 response.IsSuccessful = true;
                 response.ErrorMessage = "CUSTOMER UPDATED SUCCESSFULLY";

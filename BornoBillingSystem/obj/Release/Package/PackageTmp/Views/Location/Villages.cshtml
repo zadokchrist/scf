@@ -1,0 +1,103 @@
+﻿@model List<BillingSystemLogic.Models.Village>
+@{
+    ViewBag.Title = "View Villages";
+    Layout = "~/Views/Shared/_LayoutPagineted.cshtml";
+}
+<div class="">
+    <div class="page-title">
+        <div class="title_left">
+            <h3>Villages</h3>
+        </div>
+
+        <div class="title_right">
+            <div class="col-md-5 col-sm-5 col-xs-12 form-group pull-right top_search">
+                <div class="input-group">
+                    <input type="text" class="form-control" placeholder="Search for...">
+                    <span class="input-group-btn">
+                        <button class="btn btn-secondary" type="button">Go!</button>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="clearfix"></div>
+
+    <div class="row">
+
+        <div class="col-md-12 col-sm-12 col-xs-12">
+            <div class="x_panel">
+                <div class="x_title">
+                    <ul class="nav navbar-right panel_toolbox">
+                        <li>
+                            <a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-wrench"></i></a>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <a class="dropdown-item" href="#">Settings 1</a>
+                                <a class="dropdown-item" href="#">Settings 2</a>
+                            </div>
+                        </li>
+                        <li>
+                            <a class="close-link"><i class="fa fa-close"></i></a>
+                        </li>
+                    </ul>
+                    <a href="~/Location/AddVillage" class="btn btn-primary">Add Village</a>
+                    <div class="clearfix"></div>
+
+                </div>
+
+                <div class="x_content">
+                    <h6 class="bg-green text-center">@ViewBag.Message</h6>
+                    <h6 class="bg-red text-center">@ViewBag.Error</h6>
+
+                    @if (Model != null && Model.Count > 0)
+                    {
+                        <table id="datatable-buttons" class="table table-striped table-bordered" style="width:100%">
+                            <thead>
+                                <tr>
+                                    <th>Village Name</th>
+                                    <th>Scheme</th>
+                                    <th>Status</th>
+                                    <th>
+                                        Action
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @foreach (var data in Model)
+                                {
+                                    <tr>
+                                        <td>@data.VillageName</td>
+                                        <td>@data.SchemeId</td>
+                                        @if (bool.Parse(data.Active))
+                                        {
+                                            <td>Active</td>
+                                        }
+                                        else
+                                        {
+                                            <td>Deactive</td>
+                                        }
+                                        <td>
+                                            @if (bool.Parse(data.Active))
+                                            {
+                                                <a href="~/Location/UpdateVillageStatus?villageid=@data.VillageId&status=Deactivate&villageName=@data.VillageName">Deactivate</a>
+                                            }
+                                            else
+                                            {
+                                                <a href="~/Location/UpdateVillageStatus?villageid=@data.VillageId&status=Activate&villageName=@data.VillageName">Activate</a>
+                                            }
+                                        </td>
+                                    </tr>
+                                }
+
+                            </tbody>
+                        </table>
+                    }
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

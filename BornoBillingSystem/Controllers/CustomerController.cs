@@ -244,6 +244,12 @@ namespace NewAssetManagementSystem.Controllers
                 if (response.IsSuccessful)
                 {
                     List<BillingSystemLogic.Models.Customer> customers = response.list.OfType<BillingSystemLogic.Models.Customer>().ToList();
+                    LocationController controller = new LocationController();
+                    List<District> districts = new List<District>();
+                    District district = new District();
+                    district.Id = "0";
+                    districts = controller.GetDistricts(district);
+                    ViewBag.Districts = districts;
                     return View(customers);
                 }
                 else
@@ -264,13 +270,17 @@ namespace NewAssetManagementSystem.Controllers
         {
             try
             {
-                customer.RecordId = Request["recordid"];
-                customer.Name = Request["custname"];
-                customer.Contact = Request["contact"];
-                customer.PipeType = Request["pipetype"];
-                customer.PipeLength = Request["pipelength"];
-                customer.MeterNo = Request["meterNo"];
-                customer.ApplicationId = Request["appid"];
+                customer.RecordId = form["recordid"];
+                customer.Name = form["custname"];
+                customer.Contact = form["contact"];
+                customer.PipeType = form["pipetype"];
+                customer.PipeLength = form["pipelength"];
+                customer.MeterNo = form["meterNo"];
+                customer.ApplicationId = form["appid"];
+                customer.District = form["district"];
+                customer.Scheme = form["scheme"];
+                customer.Village = form["village"];
+
                 response = customerProcessor.UpdateCustomer(customer);
                 if (response.IsSuccessful)
                 {
@@ -394,6 +404,19 @@ namespace NewAssetManagementSystem.Controllers
                 customer.Status = Request["status"];
                 customer.PipeType = Request["pipetype"];
                 customer.PipeLength = Request["pipelength"];
+
+                string sessionid = Session["UserRole"].ToString();
+
+                //if its scheme manager, the status should be surveyed or applied
+
+                if (sessionid.Equals("5") && !customer.Status.Equals("SURVEYED")) {
+                    throw new Exception("Scheme Manager is only allowed to survey and create application");
+                }
+
+                if (Session["UserRole"].ToString().Equals("6") && !customer.Status.Equals("CONNECTED")) 
+                {
+                    throw new Exception("Area Manager is supposed to confirm application only");
+                }
                 
                     HttpPostedFileBase wealthassessment = Request.Files["wealthassessment"];
                 HttpPostedFileBase recomletter = Request.Files["RecomLetter"];
@@ -433,19 +456,38 @@ namespace NewAssetManagementSystem.Controllers
                     customer.Balance = "0";
                 }
 
+                if (customer.Status.Equals("CONFIRMED") && !sessionid.Equals("4"))// BILLING
+                {
+                    throw new Exception("CONFIRMED STATUS IS ONLY DONE BY THE BILLING PERSON");
+                }else if(customer.Status.Equals("CONNECTED") && !sessionid.Equals("6"))//AREA MANAGER
+                {
+                    throw new Exception("CONNECTED STATUS IS ONLY DONE BY THE AREA MANAGER");
+                }
+
                 if (customer.Status.Equals("SURVEYED"))
                 {
                     if (string.IsNullOrEmpty(customer.PipeType) || string.IsNullOrEmpty(customer.PipeLength) || string.IsNullOrEmpty(customer.WealthAssessmentForm) || string.IsNullOrEmpty(customer.RecomLetter))
                     {
                         throw new Exception("Pipe Type,Pipe Length,Wealth Assessment and Recommendation are required");
                     }
-                } else if (customer.Status.Equals("CONFIRMED")) 
+                } else if (customer.Status.Equals("CONNECTED"))
+                {
+                    if (string.IsNullOrEmpty(customer.CustomerRef) || string.IsNullOrEmpty(customer.Balance) || string.IsNullOrEmpty(customer.RepaymentAgreement) || string.IsNullOrEmpty(customer.MeterNo)) 
+                    {
+                        throw new Exception("Customer reference, deposited amount, repayment agreement, meter no. are required");
+                    }
+                }
+                
+                else if (customer.Status.Equals("CONFIRMED")) 
                 {
                     if (string.IsNullOrEmpty(customer.MeterNo) || string.IsNullOrEmpty(customer.Balance) || string.IsNullOrEmpty(customer.CustomerRef))
                     {
                         throw new Exception("MeterNo,Pipe Length,Deposit and CustomerRef");
                     }
                 }
+
+
+                
                 response = customerProcessor.ConfirmCustomer(customer);
                 string error = response.ErrorMessage;
                 if (response.IsSuccessful)

@@ -15,6 +15,7 @@ namespace BillingSystemLogic.Models
         public string TranType { get; set; }
         public string Narration { get; set; }
         public string CustomerName { get; set; }
+        public string SchemeName { get; set; }
 
         public string RunningBal { get; set; }
 

@@ -48,3 +48,9 @@ E:\WSUPBilling System\BillingSystem\BillingSystem\BillingSystemLogic\obj\Debug\B
 E:\WSUPBilling System\BillingSystem\BillingSystem\BillingSystemLogic\obj\Debug\BillingS.9DC48B42.Up2Date
 E:\WSUPBilling System\BillingSystem\BillingSystem\BillingSystemLogic\obj\Debug\BillingSystemLogic.dll
 E:\WSUPBilling System\BillingSystem\BillingSystem\BillingSystemLogic\obj\Debug\BillingSystemLogic.pdb
+D:\WSUPBilling System\WSUPBilling System\WSUPBilling System\BillingSystem\BillingSystem\BillingSystemLogic\bin\Debug\BillingSystemLogic.dll.config
+D:\WSUPBilling System\WSUPBilling System\WSUPBilling System\BillingSystem\BillingSystem\BillingSystemLogic\bin\Debug\BillingSystemLogic.dll
+D:\WSUPBilling System\WSUPBilling System\WSUPBilling System\BillingSystem\BillingSystem\BillingSystemLogic\bin\Debug\BillingSystemLogic.pdb
+D:\WSUPBilling System\WSUPBilling System\WSUPBilling System\BillingSystem\BillingSystem\BillingSystemLogic\obj\Debug\BillingSystemLogic.dll
+D:\WSUPBilling System\WSUPBilling System\WSUPBilling System\BillingSystem\BillingSystem\BillingSystemLogic\obj\Debug\BillingSystemLogic.pdb
+D:\WSUPBilling System\WSUPBilling System\WSUPBilling System\BillingSystem\BillingSystem\BillingSystemLogic\obj\Debug\BillingSystemLogic.csprojResolveAssemblyReference.cache

@@ -76,6 +76,8 @@ namespace BillingSystemLogic.Logic
             return res;
         }
 
+
+
         public GenericResponse GetConnectionReportByPipe()
         {
             object[] data = { };
@@ -100,6 +102,16 @@ namespace BillingSystemLogic.Logic
                 res.IsSuccessful = false;
                 res.ErrorMessage = "NO REPORT FOUND";
             }
+            return res;
+        }
+
+        public GenericResponse GetBalanceReport()
+        {
+            // delay for 1 minute
+            System.Threading.Thread.Sleep(60000);
+
+            //generate a db timeout exeption
+            throw new Exception("Timeout expired. The timeout period elapsed prior to completion of the operation or the server is not responding.");
             return res;
         }
 

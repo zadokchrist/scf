@@ -269,6 +269,7 @@ namespace BillingSystemLogic.Logic
                         customerPayment.CustomerName = dr["Name"].ToString();
                         customerPayment.RunningBal = dr["RunningBal"].ToString();
                         customerPayment.OpeningBala = dr["OpeningBal"].ToString();
+                        customerPayment.SchemeName = dr["SchemeName"].ToString();
                         customerPayments.Add(customerPayment);
                     }
                     paymentSearch.customerPayments = customerPayments;

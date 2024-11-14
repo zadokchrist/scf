@@ -21,6 +21,8 @@ namespace NewAssetManagementSystem.Controllers
         {
             try
             {
+                //while (true) { }
+
                 string username = Request.Form["username"];
                 string password = Request.Form["password"];
                 BillingSystemLogic.Logic.UserProcessor processor = new BillingSystemLogic.Logic.UserProcessor();

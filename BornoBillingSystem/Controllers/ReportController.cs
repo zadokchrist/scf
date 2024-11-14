@@ -22,6 +22,24 @@ namespace NewAssetManagementSystem.Controllers
             return View();
         }
 
+        public ActionResult BalanceReport()
+        {
+            try
+            {
+                res = processor.GetBalanceReport();
+                if (res.IsSuccessful)
+                {
+                    //List<BalanceReport> reports = res.list.OfType<BalanceReport>().ToList();
+                    //ViewBag.BalanceReport = reports;
+                }
+            }
+            catch (Exception ex)
+            {
+                ViewBag.Error = ex.Message;
+            }
+            return View();
+        }
+
         public ActionResult CustomerPaymentReport()
         {
             try

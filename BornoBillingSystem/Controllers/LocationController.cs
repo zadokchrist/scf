@@ -328,6 +328,19 @@ namespace NewAssetManagementSystem.Controllers
             return View();
         }
 
+        public ActionResult GetAllDistricts()
+        {
+            district.Id = "0";
+            response = processor.GetDistricts(district);
+            List<District> districts = response.list != null ? response.list.OfType<District>().ToList() : new List<District>();
+            var districtlist = districts.Select(s => new SelectListItem {
+                Value = s.Id.ToString(),
+                Text = s.DistrictName
+            });
+
+            return Json(districtlist, JsonRequestBehavior.AllowGet);
+        }
+
         public ActionResult GetSchemesByDistrict(string districtId)
         {
             // Retrieve schemes based on the districtId and populate them in a list

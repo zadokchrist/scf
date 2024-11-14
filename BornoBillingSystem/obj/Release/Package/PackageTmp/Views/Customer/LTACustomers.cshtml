@@ -1,0 +1,118 @@
+﻿
+@{
+    ViewBag.Title = "Customers";
+    Layout = "~/Views/Shared/_LayoutPagineted.cshtml";
+}
+<div class="">
+    <div class="page-title">
+        <div class="title_left">
+            <h3>Customer Report</h3>
+        </div>
+
+        <div class="title_right">
+            <div class="col-md-5 col-sm-5 col-xs-12 form-group pull-right top_search">
+                <div class="input-group">
+                    <input type="text" class="form-control" placeholder="Search for...">
+                    <span class="input-group-btn">
+                        <button class="btn btn-secondary" type="button">Go!</button>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="clearfix"></div>
+
+    <div class="row">
+
+        <div class="col-md-12 col-sm-12 col-xs-12">
+            <div class="x_panel">
+                <div class="x_title">
+                    <ul class="nav navbar-right panel_toolbox">
+                        <li>
+                            <a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-wrench"></i></a>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <a class="dropdown-item" href="#">Settings 1</a>
+                                <a class="dropdown-item" href="#">Settings 2</a>
+                            </div>
+                        </li>
+                        <li>
+                            <a class="close-link"><i class="fa fa-close"></i></a>
+                        </li>
+                    </ul>
+                    <div class="clearfix"></div>
+                </div>
+                <div class="x_content">
+                    <h6 class="bg-green text-center">@ViewBag.Message</h6>
+                    <h6 class="bg-red text-center">@ViewBag.Error</h6>
+                    <table id="datatable-buttons" class="table table-striped table-bordered" style="width:100%">
+                        <thead>
+                            <tr>
+                                <th>Customer Id</th>
+                                <th>Customer Name</th>
+                                <th>Kebele</th>
+                                <th>Last Reading</th>
+                                <th>Current Reading</th>
+                                <th>Diff</th>
+                                <th>Tariff</th>
+                                <th>MeterRent</th>
+                                <th>OutStandingBal</th>
+                                <th>Suppressed</th>
+                                <th>
+                                    Action
+                                </th>
+                            </tr>
+                        </thead>
+
+
+                        <tbody>
+                            @if (ViewBag.Customers != null)
+                            {
+                                foreach (var customer in ViewBag.Customers)
+                                {
+                            <tr class="even pointer">
+                                <td class=" ">@customer.RecordId</td>
+                                <td class=" ">@customer.FullName</td>
+                                <td class=" ">@customer.Kebele</td>
+                                <td class=" ">@customer.LastReading</td>
+                                <td class=" ">@customer.CurrentReading</td>
+                                <td class=" ">@customer.Diff</td>
+                                <td class=" ">@customer.Tarrif</td>
+                                <td class=" ">@customer.MeterRent</td>
+                                <td class=" ">@customer.OutStandingBal</td>
+                                @if (!@customer.Active)
+                                {
+                                    <td class=" ">Suppressed</td>
+                                }
+                                else
+                                {
+                                    <td class=" ">ACTIVE</td>
+                                }
+                                <td>
+                                    @if (Session["UserRole"].ToString().Equals("1"))//billing officer
+                                    {
+                                        <a href="~/Billing/GenerateCustomerBillLTA?recordid=@customer.RecordId" class="fa-edit">Bill Customer</a>
+                                        if (@customer.Active)
+                                        {
+                                            <a href="~/Billing/SuppressCustomer?recordid=@customer.RecordId" class="fa-edit">Supress Account</a>
+                                        }
+                                        else
+                                        {
+                                            <a href="~/Billing/UnSuppressCustomer?recordid=@customer.RecordId" class="fa-edit">UnSuppress</a>
+                                        }
+                                    }
+                                </td>
+                            </tr>
+                                }
+
+                            }
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -32,6 +32,7 @@ namespace BillingSystemLogic.Logic
                         transaction.TranType = dr["TranType"].ToString();
                         transaction.TranDate = dr["TranDate"].ToString();
                         transaction.CustomerName = dr["Name"].ToString();
+                        transaction.SchemeName = dr["SchemeName"].ToString();
                         transactions.Add(transaction);
                     }
                     res.IsSuccessful = true;
@@ -109,13 +110,30 @@ namespace BillingSystemLogic.Logic
 
         public GenericResponse GetBalanceReport()
         {
-            // delay for 1 minute
-            System.Threading.Thread.Sleep(60000);
+            object[] data = { };
+            table = processor.ExecuteDataSet("GetCustomerBalance", data);
+            if (table.Rows.Count>0)
+            {
+                List<Object> balances = new List<object>();
+                foreach (DataRow dr in table.Rows)
+                {
+                    BalanceReportModel bal = new BalanceReportModel();
+                    bal.CustomerName = dr["Name"].ToString();
+                    bal.CustomerRef = dr["CustomerRef"].ToString();
+                    bal.Balance = dr["Balance"].ToString();
+                    bal.TotalPaid = dr["TotalPaid"].ToString();
+                    bal.SchemeName = dr["SchemeName"].ToString();
 
-            //generate a db timeout exeption
-            throw new Exception("Timeout expired. The timeout period elapsed prior to completion of the operation or the server is not responding.");
+                    balances.Add(bal);
+                }
+
+                res.IsSuccessful = true;
+                res.list = balances;
+                res.ErrorMessage = "SUCCESS";
+            }
             return res;
         }
+            
 
     }
 }

@@ -75,6 +75,7 @@
     <Compile Include="Models\Account.cs" />
     <Compile Include="Models\AccountStatement.cs" />
     <Compile Include="Models\AssignmentModel.cs" />
+    <Compile Include="Models\BalanceReportModel.cs" />
     <Compile Include="Models\Billing.cs" />
     <Compile Include="Models\Category.cs" />
     <Compile Include="Models\ConnectionReport.cs" />

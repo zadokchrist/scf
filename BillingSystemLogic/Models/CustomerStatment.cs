@@ -15,5 +15,6 @@ namespace BillingSystemLogic.Models
         public string TranType { get; set; }
         public string TranDate { get; set; }
         public string CustomerName { get; set; }
+        public string SchemeName { get; set; }
     }
 }

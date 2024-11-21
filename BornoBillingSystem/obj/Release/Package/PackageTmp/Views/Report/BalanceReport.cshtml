@@ -54,30 +54,22 @@
                             <tr>
                                 <th>Customer Name</th>
                                 <th>Customer Reference</th>
-                                @*<th>Location</th>*@
-                                <th>Customer Type</th>
-                                <th>Tariff</th>
-                                <th>Tarrif Period</th>
-                                @*<th>Office Name</th>*@
-                                @*<th>Manager</th>*@
+                                <th>Total Paid</th>
+                                <th>Balance</th>
                             </tr>
                         </thead>
 
 
                         <tbody>
-                            @if (ViewBag.Customers != null)
+                            @if (ViewBag.BalanceReport != null)
                             {
-                                foreach (var customer in ViewBag.Customers)
+                                foreach (var balance in ViewBag.BalanceReport)
                                 {
                                     <tr class="even pointer">
-                                        <td class=" ">@customer.CustomerName</td>
-                                        <td class=" ">@customer.CustomerReference</td>
-                                        @*<td class=" ">@customer.Location</td>*@
-                                        <td class=" ">@customer.CustomerType</td>
-                                        <td class=" ">@customer.TarifCharger</td>
-                                        <td class=" ">@customer.TarifPeriod</td>
-                                        @*<td class=" ">@customer.OfficeCode</td>*@
-                                        @*<td class=" ">@customer.CommercialManager</td>*@
+                                        <td class=" ">@balance.CustomerName</td>
+                                        <td class=" ">@balance.CustomerRef</td>
+                                        <td class=" ">@balance.TotalPaid</td>
+                                        <td class=" ">@balance.Balance</td>
                                     </tr>
                                 }
                             }

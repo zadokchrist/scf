@@ -52,7 +52,7 @@
                     <br />
                     <h6 class="bg-green text-center">@ViewBag.Message</h6>
                     <h6 class="bg-red text-center">@ViewBag.Error</h6>
-                    @using (Html.BeginForm("PaymentFileUpload", "FileUpload", FormMethod.Post, new { enctype = "multipart/form-data", @class = "form-horizontal form-label-left", data_parsley_validate = "true", id = "demo-form2" }))
+                    @using (Html.BeginForm("ConsumptionFileUpload", "FileUpload", FormMethod.Post, new { enctype = "multipart/form-data", @class = "form-horizontal form-label-left", data_parsley_validate = "true", id = "demo-form2" }))
                     {
                         <div class="item form-group">
                             <label class="col-form-label col-md-3 col-sm-3 label-align" for="room-name">

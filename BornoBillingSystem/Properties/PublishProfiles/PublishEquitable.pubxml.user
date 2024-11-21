@@ -10,7 +10,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
   </PropertyGroup>
   <ItemGroup>
     <File Include="bin/BillingSystemLogic.dll">
-      <publishTime>09/18/2024 06:35:07</publishTime>
+      <publishTime>11/20/2024 04:40:35</publishTime>
     </File>
     <File Include="bin/itextsharp.dll">
       <publishTime>06/20/2019 17:39:40</publishTime>
@@ -31,7 +31,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>07/25/2012 11:48:56</publishTime>
     </File>
     <File Include="bin/NewAssetManagementSystem.dll">
-      <publishTime>10/24/2024 03:31:34</publishTime>
+      <publishTime>11/20/2024 04:40:45</publishTime>
     </File>
     <File Include="bin/Newtonsoft.Json.dll">
       <publishTime>11/09/2019 00:56:44</publishTime>
@@ -14257,7 +14257,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>11/13/2023 12:43:52</publishTime>
     </File>
     <File Include="Views/Customer/EditCustomer.cshtml">
-      <publishTime>09/18/2024 06:19:38</publishTime>
+      <publishTime>11/14/2024 11:23:48</publishTime>
     </File>
     <File Include="Views/Customer/LTACustomers.cshtml">
       <publishTime>04/26/2023 16:16:54</publishTime>
@@ -14266,7 +14266,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>07/11/2024 10:43:46</publishTime>
     </File>
     <File Include="Views/FileUpload/ConsumptionFileUpload.cshtml">
-      <publishTime>09/19/2024 05:09:56</publishTime>
+      <publishTime>11/14/2024 12:30:29</publishTime>
     </File>
     <File Include="Views/FileUpload/PaymentFileUpload.cshtml">
       <publishTime>08/01/2023 11:40:00</publishTime>
@@ -14308,7 +14308,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>11/09/2023 09:27:22</publishTime>
     </File>
     <File Include="Views/Report/BalanceReport.cshtml">
-      <publishTime>09/18/2024 05:47:54</publishTime>
+      <publishTime>11/20/2024 04:34:17</publishTime>
     </File>
     <File Include="Views/Report/BillingReport.cshtml">
       <publishTime>04/24/2023 02:42:00</publishTime>
@@ -14323,7 +14323,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>09/18/2024 05:34:22</publishTime>
     </File>
     <File Include="Views/Report/CustomerStatement.cshtml">
-      <publishTime>11/14/2023 13:53:02</publishTime>
+      <publishTime>11/14/2024 11:58:55</publishTime>
     </File>
     <File Include="Views/Shared/_Footer.cshtml">
       <publishTime>11/24/2019 03:37:04</publishTime>
@@ -14338,7 +14338,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>12/04/2023 17:19:10</publishTime>
     </File>
     <File Include="Views/Shared/_SideBar.cshtml">
-      <publishTime>09/19/2024 05:06:01</publishTime>
+      <publishTime>11/14/2024 12:23:05</publishTime>
     </File>
     <File Include="Views/Shared/_TopNavigation.cshtml">
       <publishTime>12/04/2023 17:20:10</publishTime>

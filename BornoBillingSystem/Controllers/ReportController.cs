@@ -29,8 +29,7 @@ namespace NewAssetManagementSystem.Controllers
                 res = processor.GetBalanceReport();
                 if (res.IsSuccessful)
                 {
-                    //List<BalanceReport> reports = res.list.OfType<BalanceReport>().ToList();
-                    //ViewBag.BalanceReport = reports;
+                    ViewBag.BalanceReport = res.list;
                 }
             }
             catch (Exception ex)

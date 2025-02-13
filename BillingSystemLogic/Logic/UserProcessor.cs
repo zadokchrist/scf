@@ -36,7 +36,7 @@ namespace BillingSystemLogic.Logic
                         user.Uemail = dr["Uemail"].ToString();
                         user.Uid = dr["Uid"].ToString();
                         user.Uname = dr["Uname"].ToString();
-                        user.Utype = dr["UserRole"].ToString();
+                        user.Utype = dr["RoleName"].ToString();
                         systemUsers.Add(user);
                     }
                 }

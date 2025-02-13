@@ -138,7 +138,7 @@
                                         new SelectListItem { Text = "Please select ID type", Value = "", Disabled = true, Selected = true },
                                         new SelectListItem { Text = "National ID", Value = "national_id" },
                                         new SelectListItem { Text = "Work ID", Value = "work_id" }
-                                    }, new { @class = "form-control", required="required"})
+                                    }, new { @class = "form-control"})
                                 </div>
                             </div>
                         </div>
@@ -147,7 +147,7 @@
                                 Id Number
                             </label>
                             <div class="col-md-6 col-sm-6 ">
-                                @Html.TextBoxFor(m => m.Customer.Id_number, new { @class = "form-control",required="required"})
+                                @Html.TextBoxFor(m => m.Customer.Id_number, new { @class = "form-control"})
                             </div>
                         </div>
                         <div class="item form-group">
@@ -171,7 +171,7 @@
                                 Recommendation Letter 
                             </label>
                             <div class="col-md-6 col-sm-6 ">
-                                @Html.TextBoxFor(m => m.RecomLetter, new { @class = "form-control", type = "file" ,required="required"})
+                                @Html.TextBoxFor(m => m.RecomLetter, new { @class = "form-control", type = "file" })
                             </div>
                         </div>
                         <div class="item form-group">

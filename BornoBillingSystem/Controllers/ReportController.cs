@@ -10,7 +10,8 @@ namespace NewAssetManagementSystem.Controllers
     public class ReportController : Controller
     {
         BillingSystemLogic.Logic.ReportProcessor processor = new BillingSystemLogic.Logic.ReportProcessor();
-        BillingSystemLogic.Models.GenericResponse res = new BillingSystemLogic.Models.GenericResponse();
+        BillingSystemLogic.Models.GenericResponse res,resp2 = new BillingSystemLogic.Models.GenericResponse();
+        BillingSystemLogic.Logic.LocationProcessor locprocessor = new BillingSystemLogic.Logic.LocationProcessor();
         // GET: Report
         public ActionResult Index()
         {
@@ -70,11 +71,52 @@ namespace NewAssetManagementSystem.Controllers
             try
             {
                 res = processor.GetConnectionReport();
+                Scheme scheme = new Scheme();
+                scheme.SchemeId = "0";
+                resp2 = locprocessor.GetSchemes(scheme);
                 if (res.IsSuccessful)
                 {
                     List<ConnectionReport> reports = res.list.OfType<ConnectionReport>().ToList();
                     ViewBag.Connectiionreport = reports;
                 }
+
+                if (resp2.IsSuccessful)
+                {
+                    List<Scheme> schemereport = resp2.list.OfType<Scheme>().ToList();
+                    ViewBag.Schemes = schemereport;
+                }
+            }
+            catch (Exception ex)
+            {
+                ViewBag.Error = ex.Message;
+            }
+            return View();
+        }
+
+        [HttpPost]
+        public ActionResult ConnectionReport(FormCollection form)
+        {
+            try
+            {
+                string custref = Request["schemename"];
+                string fromdate = Request["fromdate"];
+                string todate = Request["todate"];
+                Scheme scheme = new Scheme();
+                scheme.SchemeId = "0";
+                resp2 = locprocessor.GetSchemes(scheme);
+                res = processor.GetConnectionReport(custref, fromdate, todate);
+                if (res.IsSuccessful)
+                {
+                    List<ConnectionReport> reports = res.list.OfType<ConnectionReport>().ToList();
+                    ViewBag.Connectiionreport = reports;
+                }
+
+                if (resp2.IsSuccessful)
+                {
+                    List<Scheme> schemereport = resp2.list.OfType<Scheme>().ToList();
+                    ViewBag.Schemes = schemereport;
+                }
+
             }
             catch (Exception ex)
             {

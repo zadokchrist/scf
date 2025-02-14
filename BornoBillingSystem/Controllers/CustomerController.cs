@@ -76,6 +76,7 @@ namespace NewAssetManagementSystem.Controllers
             district.Id = "0";
             scheme.SchemeId = "0";
             village.VillageId = "0";
+            
             var customerviewModel = new CustomerModel
             {
                 Customer = new BillingSystemLogic.Models.Customer(),
@@ -146,6 +147,12 @@ namespace NewAssetManagementSystem.Controllers
                         customer.WealthAssessmentForm = actualfilepath;
                         BillingSystemLogic.Logic.SystemProcessor.DeleteExistingfile(actualfilepath);
                         customerModel.WealthAssessmentform.SaveAs(actualfilepath);
+                    }
+
+                    string sessionid = Session["UserRole"].ToString();
+                    if (!sessionid.Equals("5") || string.IsNullOrEmpty(customer.RecomLetter))//scheme manager
+                    {
+                        throw new Exception("Scheme manager is suppused to enter recommendation letter");
                     }
 
                     BillingSystemLogic.Logic.CustomerProcessor customerProcessor = new BillingSystemLogic.Logic.CustomerProcessor(customer);
@@ -404,6 +411,9 @@ namespace NewAssetManagementSystem.Controllers
                 customer.Status = Request["status"];
                 customer.PipeType = Request["pipetype"];
                 customer.PipeLength = Request["pipelength"];
+                customer.PlumberName = Request["plumbername"];
+                customer.ConnectionDate = Request["connectiondate"];
+                customer.MeterReading = Request["meterreading"];
 
                 string sessionid = Session["UserRole"].ToString();
 
@@ -412,10 +422,13 @@ namespace NewAssetManagementSystem.Controllers
                 if (sessionid.Equals("5") && !customer.Status.Equals("SURVEYED")) {
                     throw new Exception("Scheme Manager is only allowed to survey and create application");
                 }
-
-                if (Session["UserRole"].ToString().Equals("6") && !customer.Status.Equals("CONNECTED")) 
+                else if (sessionid.ToString().Equals("6") && (!customer.Status.Equals("PAID")) && !customer.Status.Equals("CONNECTED")) //Scheme Manager
                 {
-                    throw new Exception("Area Manager is supposed to confirm application only");
+                    throw new Exception("Area Manager is supposed to convert application to PAID AND CONNECTED only");
+                }
+                else if ( customer.Status.Equals("PAID") && !sessionid.ToString().Equals("6"))//Scheme Manager
+                {
+                    throw new Exception("Area Manager is supposed to convert application to PAID AND CONNECTED only");
                 }
                 
                     HttpPostedFileBase wealthassessment = Request.Files["wealthassessment"];
@@ -466,25 +479,39 @@ namespace NewAssetManagementSystem.Controllers
 
                 if (customer.Status.Equals("SURVEYED"))
                 {
-                    if (string.IsNullOrEmpty(customer.PipeType) || string.IsNullOrEmpty(customer.PipeLength) || string.IsNullOrEmpty(customer.WealthAssessmentForm) || string.IsNullOrEmpty(customer.RecomLetter))
+                    if (string.IsNullOrEmpty(customer.PipeType) || string.IsNullOrEmpty(customer.PipeLength) || string.IsNullOrEmpty(customer.WealthAssessmentForm))
                     {
-                        throw new Exception("Pipe Type,Pipe Length,Wealth Assessment and Recommendation are required");
+                        throw new Exception("Pipe Type,Pipe Length and Wealth Assessment are required");
                     }
                 } else if (customer.Status.Equals("CONNECTED"))
                 {
-                    if (string.IsNullOrEmpty(customer.CustomerRef) || string.IsNullOrEmpty(customer.Balance) || string.IsNullOrEmpty(customer.RepaymentAgreement) || string.IsNullOrEmpty(customer.MeterNo)) 
+                    if (string.IsNullOrEmpty(customer.PlumberName) || string.IsNullOrEmpty(customer.ConnectionDate) || string.IsNullOrEmpty(customer.MeterReading) || string.IsNullOrEmpty(customer.MeterNo)) 
                     {
-                        throw new Exception("Customer reference, deposited amount, repayment agreement, meter no. are required");
+                        throw new Exception("Customer PlumberName, ConnectionDate, MeterReading and meter no. are required");
+                    }
+                }
+                else if (customer.Status.Equals("CONNECTED"))
+                {
+                    if (string.IsNullOrEmpty(customer.PlumberName) || string.IsNullOrEmpty(customer.ConnectionDate) || string.IsNullOrEmpty(customer.MeterReading) || string.IsNullOrEmpty(customer.MeterNo))
+                    {
+                        throw new Exception("Customer PlumberName, ConnectionDate, MeterReading and meter no. are required");
+                    }
+                }
+                else if (customer.Status.Equals("PAID"))
+                {
+                    if (string.IsNullOrEmpty(customer.RepaymentAgreement) || string.IsNullOrEmpty(customer.Balance) )
+                    {
+                        throw new Exception("Customer repaymentagreement, newconnectionfeee and deposited amount are required");
                     }
                 }
                 
-                else if (customer.Status.Equals("CONFIRMED")) 
-                {
-                    if (string.IsNullOrEmpty(customer.MeterNo) || string.IsNullOrEmpty(customer.Balance) || string.IsNullOrEmpty(customer.CustomerRef))
-                    {
-                        throw new Exception("MeterNo,Pipe Length,Deposit and CustomerRef");
-                    }
-                }
+                //else if (customer.Status.Equals("CONFIRMED")) 
+                //{
+                //    if (string.IsNullOrEmpty(customer.MeterNo) || string.IsNullOrEmpty(customer.Balance) || string.IsNullOrEmpty(customer.CustomerRef))
+                //    {
+                //        throw new Exception("MeterNo,Pipe Length,Deposit and CustomerRef");
+                //    }
+                //}
 
 
                 

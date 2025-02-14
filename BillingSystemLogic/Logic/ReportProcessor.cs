@@ -79,6 +79,32 @@ namespace BillingSystemLogic.Logic
             return res;
         }
 
+        public GenericResponse GetConnectionReport(string schemeid,string fromdate, string todate)
+        {
+            object[] data = { schemeid, fromdate , todate };
+            table = processor.ExecuteDataSet("GetConnectionReportFilter", data);
+            if (table.Rows.Count > 0)
+            {
+                List<object> reports = new List<object>();
+                foreach (DataRow dr in table.Rows)
+                {
+                    ConnectionReport report = new ConnectionReport();
+                    report.Status = dr["Status"].ToString();
+                    report.Number = dr["Number"].ToString();
+                    reports.Add(report);
+                }
+                res.IsSuccessful = true;
+                res.list = reports;
+                res.ErrorMessage = "SUCCESS";
+            }
+            else
+            {
+                res.IsSuccessful = false;
+                res.ErrorMessage = "NO REPORT FOUND";
+            }
+            return res;
+        }
+
 
 
         public GenericResponse GetConnectionReportByPipe()

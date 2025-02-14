@@ -19,6 +19,7 @@ namespace BillingSystemLogic.Models
         public string PipeLength { get; set; }
         public string CustomerRef { get; set; }
         public string MeterNo { get; set; }
+        public string MeterReading { get; set; }
         public string ApplicationId { get; set; }
         public string IdType { get; set; }
         public string Id_number { get; set; }
@@ -27,6 +28,9 @@ namespace BillingSystemLogic.Models
         public string IdLoc { get; set; }
         public string WealthAssessmentForm { get; set; }
         public string CreationDate { get; set; }
+        public string ConnectionDate { get; set; }
+        public string PlumberName { get; set; }
+        public string ConnectionFee { get; set; }
         public string Balance { get; set; }
         public string Status { get; set; }
     }

@@ -66,6 +66,35 @@ namespace NewAssetManagementSystem.Controllers
             return View();
         }
 
+        [HttpPost]
+        public ActionResult CustomerPaymentReport(FormCollection form)
+        {
+            try
+            {
+                DateTime fromdate = DateTime.Parse(Request["fromdate"]);
+                DateTime todate = DateTime.Parse(Request["todate"]);
+                BillingSystemLogic.Models.CustomerPayment customerPayment = new BillingSystemLogic.Models.CustomerPayment();
+                BillingSystemLogic.Models.PaymentSearch paymentSearch = new BillingSystemLogic.Models.PaymentSearch();
+                customerPayment.CustomerRef = "";
+                customerPayment.ReceiptNum = "";
+                BillingSystemLogic.Logic.BillingProcessor billingProcessor = new BillingSystemLogic.Logic.BillingProcessor(customerPayment);
+                paymentSearch = billingProcessor.GetCustomerPayments(fromdate, todate);
+                if (paymentSearch.ErrorCode.Equals("0"))
+                {
+                    ViewBag.CustomerPayments = paymentSearch.customerPayments;
+                }
+                else
+                {
+                    ViewBag.Error = paymentSearch.ErrorMessage;
+                }
+            }
+            catch (Exception ex)
+            {
+                ViewBag.Error = ex.Message;
+            }
+            return View();
+        }
+
         public ActionResult ConnectionReport()
         {
             try

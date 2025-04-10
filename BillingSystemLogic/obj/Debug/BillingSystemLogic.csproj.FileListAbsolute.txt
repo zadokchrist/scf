@@ -53,4 +53,3 @@ D:\WSUPBilling System\WSUPBilling System\WSUPBilling System\BillingSystem\Billin
 D:\WSUPBilling System\WSUPBilling System\WSUPBilling System\BillingSystem\BillingSystem\BillingSystemLogic\bin\Debug\BillingSystemLogic.pdb
 D:\WSUPBilling System\WSUPBilling System\WSUPBilling System\BillingSystem\BillingSystem\BillingSystemLogic\obj\Debug\BillingSystemLogic.dll
 D:\WSUPBilling System\WSUPBilling System\WSUPBilling System\BillingSystem\BillingSystem\BillingSystemLogic\obj\Debug\BillingSystemLogic.pdb
-D:\WSUPBilling System\WSUPBilling System\WSUPBilling System\BillingSystem\BillingSystem\BillingSystemLogic\obj\Debug\BillingSystemLogic.csprojResolveAssemblyReference.cache

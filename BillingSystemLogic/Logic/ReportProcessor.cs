@@ -119,6 +119,7 @@ namespace BillingSystemLogic.Logic
                     ConnectionType report = new ConnectionType();
                     report.PipeLength = dr["PipeLength"].ToString();
                     report.PipeType = dr["PipeType"].ToString();
+                    report.PipeSize = dr["PipeSize"].ToString();
                     report.NumberCustomers = dr["NumberCustomers"].ToString();
                     reports.Add(report);
                 }

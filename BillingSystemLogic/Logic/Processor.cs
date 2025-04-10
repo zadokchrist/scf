@@ -291,11 +291,11 @@ namespace BillingSystemLogic.Logic
             }
         }
 
-        internal DataTable GetCustomerPayments(string customerRef, string receiptNum,string trantype)
+        internal DataTable GetCustomerPayments(string customerRef, string receiptNum,string trantype,DateTime startdate,DateTime enddate)
         {
             try
             {
-                dataTable = dh.GetCustomerPayments(customerRef, receiptNum, trantype);
+                dataTable = dh.GetCustomerPayments(customerRef, receiptNum, trantype, startdate, enddate);
             }
             catch (Exception ex)
             {
@@ -359,10 +359,10 @@ namespace BillingSystemLogic.Logic
             dh.ReversePayment(receiptNum, narration);
         }
 
-        internal bool TranExists(string receiptNum, string trantype)
+        internal bool TranExists(string receiptNum, string trantype,DateTime startdate,DateTime enddate)
         {
             bool isTrue = true;
-            dataTable = GetCustomerPayments("", receiptNum, trantype);
+            dataTable = GetCustomerPayments("", receiptNum, trantype, startdate, enddate);
             if (dataTable.Rows.Count>0)
             {
 

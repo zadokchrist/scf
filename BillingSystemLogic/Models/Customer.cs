@@ -17,6 +17,7 @@ namespace BillingSystemLogic.Models
         public string Scheme { get; set; }
         public string PipeType { get; set; }
         public string PipeLength { get; set; }
+        public string PipeSize { get; set; }
         public string CustomerRef { get; set; }
         public string MeterNo { get; set; }
         public string MeterReading { get; set; }

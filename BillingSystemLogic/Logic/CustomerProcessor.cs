@@ -28,7 +28,7 @@ namespace BillingSystemLogic.Logic
             {
                 object[] data = {customer.Name,customer.District,customer.Village,customer.Contact,customer.MeterNo,customer.ApplicationId,customer.Id_number,
                 customer.RecomLetter,customer.RepaymentAgreement,customer.IdLoc,customer.IdType,customer.WealthAssessmentForm
-                ,customer.Scheme,customer.PipeLength,customer.PipeType};
+                ,customer.Scheme,customer.PipeLength,customer.PipeType,customer.PipeSize};
                 processor.ExecuteNonQuery("CreateCustomer", data);
             }
             catch (Exception ex)
@@ -41,7 +41,7 @@ namespace BillingSystemLogic.Logic
         {
             try
             {
-                object[] data = { cust.RecordId, cust.CustomerRef,cust.Balance,cust.MeterNo,cust.Status,cust.RecomLetter,cust.RepaymentAgreement,cust.WealthAssessmentForm,cust.PipeType,cust.PipeLength};
+                object[] data = { cust.RecordId, cust.CustomerRef,cust.Balance,cust.MeterNo,cust.Status,cust.RecomLetter,cust.RepaymentAgreement,cust.WealthAssessmentForm,cust.PipeType,cust.PipeLength,cust.PipeSize};
                 processor.ExecuteNonQuery("ConfirmCustomer", data);
                 response.IsSuccessful = true;
                 response.ErrorMessage = "CUSTOMER CONFIRMED SUCCESSFULLY";
@@ -185,6 +185,7 @@ namespace BillingSystemLogic.Logic
                         customer.CustomerRef = dr["CustomerRef"].ToString();
                         customer.PipeType = dr["PipeType"].ToString();
                         customer.PipeLength = dr["PipeLength"].ToString();
+                        customer.PipeSize = dr["PipeSize"].ToString();
                         customer.WealthAssessmentForm = dr["WealthAssesmentForm"].ToString();
                         customers.Add(customer);
                     }

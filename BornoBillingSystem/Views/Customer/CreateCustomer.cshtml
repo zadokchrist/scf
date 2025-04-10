@@ -65,10 +65,10 @@
                         </div>
                         <div class="item form-group">
                             <label class="col-form-label col-md-3 col-sm-3 label-align" for="room-name">
-                                Contact<span class="required">*</span>
+                                Contact<span class="required"></span>
                             </label>
                             <div class="col-md-6 col-sm-6 ">
-                                @Html.TextBoxFor(m => m.Customer.Contact, new { @class = "form-control", required = "required" })
+                                @Html.TextBoxFor(m => m.Customer.Contact, new { @class = "form-control" })
                             </div>
                         </div>
                         <div class="item form-group">
@@ -109,6 +109,14 @@
                             </label>
                             <div class="col-md-6 col-sm-6 ">
                                 @Html.TextBoxFor(m => m.Customer.PipeLength, new { @class = "form-control" })
+                            </div>
+                        </div>
+                        <div class="item form-group">
+                            <label class="col-form-label col-md-3 col-sm-3 label-align" for="room-name">
+                                Pipe Size
+                            </label>
+                            <div class="col-md-6 col-sm-6 ">
+                                @Html.TextBoxFor(m => m.Customer.PipeSize, new { @class = "form-control" })
                             </div>
                         </div>
                         @*<div class="item form-group">

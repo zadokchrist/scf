@@ -10,6 +10,7 @@ namespace BillingSystemLogic.Models
     {
         public string PipeLength { get; set; }
         public string PipeType { get; set; }
+        public string PipeSize { get; set; }
         public string NumberCustomers { get; set; }
     }
 }

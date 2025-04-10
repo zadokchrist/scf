@@ -262,11 +262,11 @@ namespace BillingSystemLogic.Logic
             return returntable;
         }
 
-        internal DataTable GetCustomerPayments(string customerRef, string receiptNum,string trantype)
+        internal DataTable GetCustomerPayments(string customerRef, string receiptNum,string trantype,DateTime startdate, DateTime enddate)
         {
             try
             {
-                command = DbConnection.GetStoredProcCommand("GetCustomerPayments", customerRef, receiptNum, trantype);
+                command = DbConnection.GetStoredProcCommand("GetCustomerPayments", customerRef, receiptNum, trantype, startdate, enddate);
                 returntable = DbConnection.ExecuteDataSet(command).Tables[0];
             }
             catch (Exception ex)

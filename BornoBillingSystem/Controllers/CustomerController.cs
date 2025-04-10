@@ -150,10 +150,10 @@ namespace NewAssetManagementSystem.Controllers
                     }
 
                     string sessionid = Session["UserRole"].ToString();
-                    if (!sessionid.Equals("5") || string.IsNullOrEmpty(customer.RecomLetter))//scheme manager
-                    {
-                        throw new Exception("Scheme manager is suppused to enter recommendation letter");
-                    }
+                    //if (!sessionid.Equals("5") || string.IsNullOrEmpty(customer.RecomLetter))//scheme manager
+                    //{
+                    //    throw new Exception("Scheme manager is suppused to enter recommendation letter");
+                    //}
 
                     BillingSystemLogic.Logic.CustomerProcessor customerProcessor = new BillingSystemLogic.Logic.CustomerProcessor(customer);
                     customerProcessor.CreateCustomer();
@@ -412,6 +412,7 @@ namespace NewAssetManagementSystem.Controllers
                 customer.PipeType = Request["pipetype"];
                 customer.PipeLength = Request["pipelength"];
                 customer.PlumberName = Request["plumbername"];
+                customer.PipeSize = Request["pipesize"];
                 customer.ConnectionDate = Request["connectiondate"];
                 customer.MeterReading = Request["meterreading"];
 

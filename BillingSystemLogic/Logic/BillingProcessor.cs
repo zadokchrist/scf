@@ -117,7 +117,7 @@ namespace BillingSystemLogic.Logic
                     response.ErrorCode = "1000";
                     response.ErrorMessage = "RECEIPT NUMBER ALREADY EXISTS FOR THIS CUSTOMER";
                 }
-                else if(processor.TranExists(Payment.ReceiptNum, "CR"))
+                else if(processor.TranExists(Payment.ReceiptNum, "CR",DateTime.Parse("1991-01-01"),DateTime.Now))
                 {
                     response.ErrorCode = "1000";
                     response.ErrorMessage = "PAYMENT RECEIPT ALREADY EXISTS";
@@ -254,7 +254,50 @@ namespace BillingSystemLogic.Logic
             PaymentSearch paymentSearch = new PaymentSearch();
             try
             {
-                DataTable customerpayments = processor.GetCustomerPayments(Payment.CustomerRef, Payment.ReceiptNum,"");
+                DateTime startdate = DateTime.Parse("1991-01-01");
+                DateTime enddate = DateTime.Now;
+                DataTable customerpayments = processor.GetCustomerPayments(Payment.CustomerRef, Payment.ReceiptNum,"", startdate, enddate);
+                if (customerpayments.Rows.Count > 0)
+                {
+                    List<CustomerPayment> customerPayments = new List<CustomerPayment>();
+                    foreach (DataRow dr in customerpayments.Rows)
+                    {
+                        CustomerPayment customerPayment = new CustomerPayment();
+                        customerPayment.CustomerRef = dr["MeterNo"].ToString();
+                        customerPayment.ReceiptNum = dr["TransId"].ToString();
+                        customerPayment.TranAmount = dr["Amount"].ToString();
+                        customerPayment.TranDate = DateTime.Parse(dr["TranDate"].ToString()).ToString("dd-MM-yyyy");
+                        customerPayment.TranType = dr["TranType"].ToString();
+                        customerPayment.CustomerName = dr["Name"].ToString();
+                        customerPayment.RunningBal = dr["RunningBal"].ToString();
+                        customerPayment.OpeningBala = dr["OpeningBal"].ToString();
+                        customerPayment.SchemeName = dr["SchemeName"].ToString();
+                        customerPayments.Add(customerPayment);
+                    }
+                    paymentSearch.customerPayments = customerPayments;
+                    paymentSearch.ErrorCode = "0";
+                    paymentSearch.ErrorMessage = "SUCCESS";
+                }
+                else
+                {
+                    paymentSearch.ErrorCode = "1000";
+                    paymentSearch.ErrorMessage = "NO RECORDS FOUND";
+                }
+            }
+            catch (Exception ex)
+            {
+                paymentSearch.ErrorCode = "1000";
+                paymentSearch.ErrorMessage = ex.Message;
+            }
+            return paymentSearch;
+        }
+
+        public PaymentSearch GetCustomerPayments(DateTime startdate,DateTime enddate)
+        {
+            PaymentSearch paymentSearch = new PaymentSearch();
+            try
+            {
+                DataTable customerpayments = processor.GetCustomerPayments(Payment.CustomerRef, Payment.ReceiptNum, "", startdate, enddate);
                 if (customerpayments.Rows.Count > 0)
                 {
                     List<CustomerPayment> customerPayments = new List<CustomerPayment>();
@@ -295,7 +338,7 @@ namespace BillingSystemLogic.Logic
             GenericResponse response = new GenericResponse();
             try
             {
-                if (processor.TranExists(Payment.ReceiptNum,"DR"))
+                if (processor.TranExists(Payment.ReceiptNum,"DR",DateTime.Parse("1991-01-01"),DateTime.Now))
                 {
                     response.ErrorCode = "1000";
                     response.ErrorMessage = "REVERSAL ALREADY EXISTS FOR THIS PAYMENT";

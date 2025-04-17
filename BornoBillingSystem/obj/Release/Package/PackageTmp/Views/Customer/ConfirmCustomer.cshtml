@@ -95,7 +95,7 @@
                     </div>
                     <div class="item form-group">
                         <label class="col-form-label col-md-3 col-sm-3 label-align" for="room-name">
-                            Customer Ref<span class="required">*</span>
+                            Customer Ref<span class="required"></span>
                         </label>
                         <div class="col-md-6 col-sm-6 ">
                             <input type="text" value="@Model[0].CustomerRef" class="form-control" name="custref" />
@@ -103,7 +103,7 @@
                     </div>
                     <div class="item form-group">
                         <label class="col-form-label col-md-3 col-sm-3 label-align" for="room-name">
-                            Pipe Type<span class="required">*</span>
+                            Pipe Type<span class="required"></span>
                         </label>
                         <div class="col-md-6 col-sm-6 ">
                             <input type="text" value="@Model[0].PipeType" class="form-control" name="pipetype" />
@@ -119,109 +119,137 @@
                     </div>
                     <div class="item form-group">
                         <label class="col-form-label col-md-3 col-sm-3 label-align" for="room-name">
-                           Wealth Assesment Form<span class="required">*</span>
+                            Pipe Size
                         </label>
                         <div class="col-md-6 col-sm-6 ">
-                            <input type="file" value="@Model[0].WealthAssessmentForm" class="form-control" name="wealthassessment" />
-                        </div>
-                    </div>
-                    <div class="item form-group">
-                        <label class="col-form-label col-md-3 col-sm-3 label-align" for="room-name">
-                            Recommendation Letter<span class="required">*</span>
-                        </label>
-                        <div class="col-md-6 col-sm-6 ">
-                            <input type="file" value="@Model[0].RecomLetter" class="form-control" name="RecomLetter" />
-                        </div>
-                    </div>
-                    <div class="item form-group">
-                        <label class="col-form-label col-md-3 col-sm-3 label-align" for="room-name">
-                            Repayment Agreements<span class="required">*</span>
-                        </label>
-                        <div class="col-md-6 col-sm-6 ">
-                            <input type="file" value="@Model[0].RepaymentAgreement" class="form-control" name="RepaymentAgreement" />
-                        </div>
-                    </div>
-                    <div class="item form-group">
-                        <label class="col-form-label col-md-3 col-sm-3 label-align" for="room-name">
-                            New Connection Fee<span class="required">*</span>
-                        </label>
-                        <div class="col-md-6 col-sm-6 ">
-                            <input type="text" value="@Model[0].ConnectionFee" class="form-control" name="connectionfee" />
-                        </div>
-                    </div>
-                    <div class="item form-group">
-                        <label class="col-form-label col-md-3 col-sm-3 label-align" for="room-name">
-                            Deposited Amount<span class="required">*</span>
-                        </label>
-                        <div class="col-md-6 col-sm-6 ">
-                            <input type="number" value="" class="form-control" name="depoAmnt" />
-                        </div>
-                    </div>
-                    <div class="item form-group">
-                        <label class="col-form-label col-md-3 col-sm-3 label-align" for="room-name">
-                            Status<span class="required">*</span>
-                        </label>
-                        <div class="col-md-6 col-sm-6 ">
-                            <select name="status" class="form-control" required>
-                                <option selected> Please select Status</option>
-                                <option value="APPLIED">APPLIED</option>
-                                <option value="SURVEYED">SURVEYED</option>
-                                <option value="PAID">PAID</option>
-                                <option value="CONNECTED">CONNECTED</option>
-                                <option value="ON HOLD">ON HOLD</option>
-                                <option value="CONFIRMED">CONFIRMED</option>
+                            <select name="pipesize" class="form-control" required>
+                                <option value=""> Please select Size</option>
+                                <option value="1/2" @(Model[0].PipeSize == "1/2" ? "selected" : "")>1/2</option>
+                                <option value="¾" @(Model[0].PipeSize == "¾" ? "selected" : "")>¾</option>
+                                <option value="1" @(Model[0].PipeSize == "1" ? "selected" : "")>1</option>
+                                <option value=">1" @(Model[0].PipeSize == ">1" ? "selected" : "")>>1</option>
                             </select>
                         </div>
-                    </div>
-                    <div class="item form-group">
-                        <label class="col-form-label col-md-3 col-sm-3 label-align" for="room-name">
-                            Meter No<span class="required">*</span>
-                        </label>
-                        <div class="col-md-6 col-sm-6 ">
-                            <input type="text" value="@Model[0].MeterNo" class="form-control" name="meterNo" />
+                            
                         </div>
-                    </div>
-                    <div class="item form-group">
-                        <label class="col-form-label col-md-3 col-sm-3 label-align" for="room-name">
-                            Meter Reading<span class="required">*</span>
-                        </label>
-                        <div class="col-md-6 col-sm-6 ">
-                            <input type="text" value="@Model[0].MeterReading" class="form-control" name="meterreading" />
-                        </div>
-                    </div>
-                    <div class="item form-group">
-                        <label class="col-form-label col-md-3 col-sm-3 label-align" for="room-name">
-                            Connection Date<span class="required">*</span>
-                        </label>
-                        <div class="col-md-6 col-sm-6 ">
-                            <input type="date" value="@Model[0].ConnectionDate" class="form-control" name="connectiondate" />
-                        </div>
-                    </div>
-                    <div class="item form-group">
-                        <label class="col-form-label col-md-3 col-sm-3 label-align" for="room-name">
-                           Plumber Name<span class="required">*</span>
-                        </label>
-                        <div class="col-md-6 col-sm-6 ">
-                            <input type="text" value="@Model[0].PlumberName" class="form-control" name="plumbername" />
-                        </div>
-                    </div>
-                    <div class="item form-group">
-                        <label class="col-form-label col-md-3 col-sm-3 label-align" for="room-name">
-                            Application Id<span class="required">*</span>
-                        </label>
-                        <div class="col-md-6 col-sm-6 ">
-                            <input type="text" value="@Model[0].ApplicationId" class="form-control" disabled />
-                        </div>
-                    </div>
-                    <div class="ln_solid"></div>
-                    <div class="item form-group">
-                        <div class="col-md-6 col-sm-6 offset-md-3">
-                            <button class="btn btn-primary" type="button">Cancel</button>
-                            <button class="btn btn-primary" type="reset">Reset</button>
-                            <button type="submit" class="btn btn-success">Confirm Customer</button>
-                        </div>
-                    </div>
-                </form>
+
+    <div class="item form-group">
+        <label class="col-form-label col-md-3 col-sm-3 label-align" for="room-name">
+            Wealth Assesment Form<span class="required"></span>
+        </label>
+        <div class="col-md-6 col-sm-6 ">
+            <input type="file" value="@Model[0].WealthAssessmentForm" class="form-control" name="wealthassessment" />
+        </div>
+    </div>
+    <div class="item form-group">
+        <label class="col-form-label col-md-3 col-sm-3 label-align" for="room-name">
+            Recommendation Letter<span class="required"></span>
+        </label>
+        <div class="col-md-6 col-sm-6 ">
+            <input type="file" value="@Model[0].RecomLetter" class="form-control" name="RecomLetter" />
+        </div>
+    </div>
+    <div class="item form-group">
+        <label class="col-form-label col-md-3 col-sm-3 label-align" for="room-name">
+            Repayment Agreements<span class="required"></span>
+        </label>
+        <div class="col-md-6 col-sm-6 ">
+            <input type="file" value="@Model[0].RepaymentAgreement" class="form-control" name="RepaymentAgreement" />
+        </div>
+    </div>
+    <div class="item form-group">
+        <label class="col-form-label col-md-3 col-sm-3 label-align" for="room-name">
+            New Connection Fee<span class="required"></span>
+        </label>
+        <div class="col-md-6 col-sm-6 ">
+            <input type="text" value="@Model[0].ConnectionFee" class="form-control" name="connectionfee" />
+        </div>
+    </div>
+    <div class="item form-group">
+        <label class="col-form-label col-md-3 col-sm-3 label-align" for="room-name">
+            Deposited Amount<span class="required"></span>
+        </label>
+        <div class="col-md-6 col-sm-6 ">
+            <input type="number" value="" class="form-control" name="depoAmnt" />
+        </div>
+    </div>
+    <div class="item form-group">
+        <label class="col-form-label col-md-3 col-sm-3 label-align" for="room-name">
+            Status<span class="required">*</span>
+        </label>
+        <div class="col-md-6 col-sm-6 ">
+            <div class="col-md-6 col-sm-6 ">
+                <select name="status" class="form-control" required>
+                    <option value=""> Please select Status</option>
+                    <option value="APPLIED" @(Model[0].Status == "APPLIED" ? "selected" : "")>APPLIED</option>
+                    <option value="SURVEYED" @(Model[0].Status == "SURVEYED" ? "selected" : "")>SURVEYED</option>
+                    <option value="PAID" @(Model[0].Status == "PAID" ? "selected" : "")>PAID</option>
+                    <option value="CONNECTED" @(Model[0].Status == "CONNECTED" ? "selected" : "")>CONNECTED</option>
+                    <option value="ON HOLD" @(Model[0].Status == "ON HOLD" ? "selected" : "")>ON HOLD</option>
+                    <option value="CONFIRMED" @(Model[0].Status == "CONFIRMED" ? "selected" : "")>CONFIRMED</option>
+                </select>
+            </div>
+            @*<select name="status" class="form-control" required>
+                <option selected> Please select Status</option>
+                <option value="APPLIED">APPLIED</option>
+                <option value="SURVEYED">SURVEYED</option>
+                <option value="PAID">PAID</option>
+                <option value="CONNECTED">CONNECTED</option>
+                <option value="ON HOLD">ON HOLD</option>
+                <option value="CONFIRMED">CONFIRMED</option>
+            </select>*@
+        </div>
+    </div>
+    <div class="item form-group">
+        <label class="col-form-label col-md-3 col-sm-3 label-align" for="room-name">
+            Meter No<span class="required"></span>
+        </label>
+        <div class="col-md-6 col-sm-6 ">
+            <input type="text" value="@Model[0].MeterNo" class="form-control" name="meterNo" />
+        </div>
+    </div>
+    <div class="item form-group">
+        <label class="col-form-label col-md-3 col-sm-3 label-align" for="room-name">
+            Meter Reading<span class="required"></span>
+        </label>
+        <div class="col-md-6 col-sm-6 ">
+            <input type="text" value="@Model[0].MeterReading" class="form-control" name="meterreading" />
+        </div>
+    </div>
+    <div class="item form-group">
+        <label class="col-form-label col-md-3 col-sm-3 label-align" for="room-name">
+            Connection Date<span class="required"></span>
+        </label>
+        <div class="col-md-6 col-sm-6 ">
+            <input type="date" value="@Model[0].ConnectionDate" class="form-control" name="connectiondate" />
+            @*<input type="date" value="@(Model[0].ConnectionDate?.ToString("yyyy-MM-dd"))" class="form-control" name="connectiondate" />*@
+        </div>
+    </div>
+    <div class="item form-group">
+        <label class="col-form-label col-md-3 col-sm-3 label-align" for="room-name">
+            Plumber Name<span class="required">*</span>
+        </label>
+        <div class="col-md-6 col-sm-6 ">
+            <input type="text" value="@Model[0].PlumberName" class="form-control" name="plumbername" />
+        </div>
+    </div>
+    <div class="item form-group">
+        <label class="col-form-label col-md-3 col-sm-3 label-align" for="room-name">
+            Application Id<span class="required">*</span>
+        </label>
+        <div class="col-md-6 col-sm-6 ">
+            <input type="text" value="@Model[0].ApplicationId" class="form-control" disabled />
+        </div>
+    </div>
+    <div class="ln_solid"></div>
+    <div class="item form-group">
+        <div class="col-md-6 col-sm-6 offset-md-3">
+            <button class="btn btn-primary" type="button">Cancel</button>
+            <button class="btn btn-primary" type="reset">Reset</button>
+            <button type="submit" class="btn btn-success">Confirm Customer</button>
+        </div>
+    </div>
+</form>
                     }
                 </div>
             </div>

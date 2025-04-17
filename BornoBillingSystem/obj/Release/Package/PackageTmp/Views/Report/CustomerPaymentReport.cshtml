@@ -48,6 +48,28 @@
                 <div class="x_content">
                     <h6 class="bg-green text-center">@ViewBag.Message</h6>
                     <h6 class="bg-red text-center">@ViewBag.Error</h6>
+                    <form id="demo-form2" data-parsley-validate class="form-horizontal form-label-left" method="post">
+                        <div class="item form-group">
+                            <label class="col-form-label col-md-1 col-sm-3 label-align" for="vendor-name">
+                                From Date <span class="required">*</span>
+                            </label>
+                            <div class="col-md-2 col-sm-6 ">
+                                <input type="date" id="vendor-name" required="required" class="form-control" name="fromdate">
+                            </div>
+                            <div class="col-l-form-label col-md-1 col-sm-3 label-align" for="vendor-name">
+                                <label>
+                                    To Date <span class="required">*</span>
+                                </label>
+                            </div>
+                            <div class="col-md-3 col-sm-6 ">
+                                <input type="date" id="vendor-name" required="required" class="form-control" name="todate">
+                            </div>
+                            <div class="col-md-3 col-sm-6 ">
+                                <button type="submit" class="btn btn-success">Filter</button>
+                            </div>
+
+                        </div>
+                    </form>
                     <table id="datatable-buttons" class="table table-striped table-bordered" style="width:100%">
                         <thead>
                             <tr>

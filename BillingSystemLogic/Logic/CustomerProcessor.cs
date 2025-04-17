@@ -14,7 +14,7 @@ namespace BillingSystemLogic.Logic
         Processor processor = new Processor();
         GenericResponse response = new GenericResponse();
         Customer customer;
-        DataTable table;
+        DataTable table,table2;
         public CustomerProcessor(Customer customer)
         {
             this.customer = customer;
@@ -41,7 +41,7 @@ namespace BillingSystemLogic.Logic
         {
             try
             {
-                object[] data = { cust.RecordId, cust.CustomerRef,cust.Balance,cust.MeterNo,cust.Status,cust.RecomLetter,cust.RepaymentAgreement,cust.WealthAssessmentForm,cust.PipeType,cust.PipeLength,cust.PipeSize};
+                object[] data = { cust.RecordId, cust.CustomerRef,cust.Balance,cust.MeterNo,cust.Status,cust.RecomLetter,cust.RepaymentAgreement,cust.WealthAssessmentForm,cust.PipeType,cust.PipeLength,cust.PipeSize,cust.NewConnectionFee};
                 processor.ExecuteNonQuery("ConfirmCustomer", data);
                 response.IsSuccessful = true;
                 response.ErrorMessage = "CUSTOMER CONFIRMED SUCCESSFULLY";
@@ -161,6 +161,8 @@ namespace BillingSystemLogic.Logic
             {
                 object[] data = { customerid };
                 table = processor.ExecuteDataTable("GetCustomersById", data);
+
+                table2 = processor.ExecuteDataTable("GetAmountDeposited", data);
                 if (table.Rows.Count > 0)
                 {
                     List<object> customers = new List<object>();
@@ -187,6 +189,9 @@ namespace BillingSystemLogic.Logic
                         customer.PipeLength = dr["PipeLength"].ToString();
                         customer.PipeSize = dr["PipeSize"].ToString();
                         customer.WealthAssessmentForm = dr["WealthAssesmentForm"].ToString();
+
+                        customer.NewConnectionFee = table2.Rows.Count > 0 ? table2.Rows[0]["NewconnectionFee"].ToString() : "";
+                        customer.Deposit = table2.Rows.Count > 0 ? table2.Rows[0]["DepositedAmount"].ToString() : "";
                         customers.Add(customer);
                     }
                     response.list = customers;

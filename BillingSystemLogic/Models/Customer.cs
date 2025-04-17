@@ -33,6 +33,8 @@ namespace BillingSystemLogic.Models
         public string PlumberName { get; set; }
         public string ConnectionFee { get; set; }
         public string Balance { get; set; }
+        public string Deposit { get; set; }
+        public string NewConnectionFee { get; set; }
         public string Status { get; set; }
     }
 }

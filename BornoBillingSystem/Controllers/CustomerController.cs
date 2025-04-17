@@ -415,6 +415,7 @@ namespace NewAssetManagementSystem.Controllers
                 customer.PipeSize = Request["pipesize"];
                 customer.ConnectionDate = Request["connectiondate"];
                 customer.MeterReading = Request["meterreading"];
+                customer.NewConnectionFee = Request["connectionfee"];
 
                 string sessionid = Session["UserRole"].ToString();
 
